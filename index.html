@@ -40,6 +40,17 @@ catAll:'সব ডেটা',catEmp:'কর্মচারী তালিকা
 empU:'জন কর্মচারী',recU:'টি এন্ট্রি',setU:'টি মাসের আলাদা সেটিংস',
 rsHint:'ব্যাকআপ ফাইল (.json) নির্বাচন করলে ফাইলে থাকা অংশগুলো বর্তমান ডেটার জায়গায় বসবে।',
 rsQ:'রিস্টোর করলে নিচের অংশগুলো বর্তমান ডেটা প্রতিস্থাপন করবে। নিশ্চিত?',rsOk:'রিস্টোর সম্পন্ন হয়েছে',rsErr:'ব্যাকআপ ফাইলটি সঠিক নয়',rsB:'রিস্টোর',rsNone:'এই ব্যাকআপ ফাইলে নির্বাচিত অংশটি নেই',rsRow:'প্রতিটি সারির "রিস্টোর" বোতাম শুধু সেই অংশটি ফিরিয়ে আনে, ফাইলে অন্য অংশ থাকলেও।',rsTitle:'ব্যাকআপ ফাইল থেকে রিস্টোর',
+empDash:'কর্মচারী ড্যাশবোর্ড',empSub:'ব্রাঞ্চ, পদবি ও বেতন এক নজরে। কোনো ব্রাঞ্চ বা পদবিতে চাপ দিলে নিচের তালিকা সেই অনুযায়ী ফিল্টার হবে।',
+newEmp:'নতুন কর্মচারী',editEmpT:'কর্মচারীর তথ্য সম্পাদনা',
+kStaff:'মোট কর্মচারী',kSal:'মাসিক মোট বেতন',kAvg:'গড় বেতন',kBr:'ব্রাঞ্চ',kDs:'পদবি',kBig:'সবচেয়ে বড়',kTop:'সবচেয়ে বেশি',unitP:'জন',
+brCard:'ব্রাঞ্চ অনুযায়ী বেতন ও কর্মচারী',dsCard:'পদবি অনুযায়ী কর্মচারী',colStaff:'কর্মচারী',colSal:'মাসিক বেতন',
+matT:'ব্রাঞ্চ ও পদবির ম্যাট্রিক্স',noDs:'পদবি নেই',dirT:'কর্মচারী তালিকা',
+qPh:'আইডি, নাম, ব্রাঞ্চ, পদবি বা ফোন',allBr:'সব ব্রাঞ্চ',allDs:'সব পদবি',
+sName:'নাম অনুযায়ী',sId:'আইডি অনুযায়ী',sSal:'বেতন বেশি থেকে কম',sBr:'ব্রাঞ্চ অনুযায়ী',sDs:'পদবি অনুযায়ী',
+clrAll:'সব ফিল্টার মুছুন',more:'আরও দেখান',noRes:'কোনো কর্মচারী মেলেনি। খোঁজা শব্দ বা ফিল্টার বদলে দেখুন।',
+emptyT:'এখনও কোনো কর্মচারী নেই',emptyS:'প্রথম কর্মচারী যোগ করুন, অথবা Excel থেকে একসাথে ইমপোর্ট করুন।',
+actEdit:'সম্পাদনা',actDel:'মুছুন',rmF:'ফিল্টার সরান',search:'খুঁজুন',
+ 
 resetOneQ:'নিচের অংশটি মুছে ফেলা হবে। আগে ব্যাকআপ নিয়ে রাখুন। নিশ্চিত?',
 scope:'সেটিংস কোন মাসের জন্য',scDef:'ডিফল্ট (সব মাস)',scMon:'শুধু একটি মাস',
 scDefNote:'এখানকার পরিবর্তন সেই সব মাসে প্রযোজ্য হবে, যেগুলোর আলাদা সেটিংস নেই।',
@@ -75,6 +86,16 @@ catAll:'All data',catEmp:'Employees',catRec:'Attendance entries (all months)',ca
 empU:'employees',recU:'entries',setU:'month-specific settings',
 rsHint:'Choose a backup file (.json). The parts it contains will replace the current data.',
 rsQ:'Restoring will replace the current data for the parts below. Continue?',rsOk:'Restore complete',rsErr:'This backup file is not valid',rsB:'Restore',rsNone:'This backup file does not contain the selected part',rsRow:'The Restore button on each row brings back only that part, even if the file holds more.',rsTitle:'Restore from a backup file',
+empDash:'Staff dashboard',empSub:'Branches, designations and salary at a glance. Select a branch or designation to filter the list below.',
+newEmp:'New employee',editEmpT:'Edit employee',
+kStaff:'Total staff',kSal:'Total monthly salary',kAvg:'Average salary',kBr:'Branches',kDs:'Designations',kBig:'Largest',kTop:'Most staff',unitP:'staff',
+brCard:'Salary and staff by branch',dsCard:'Staff by designation',colStaff:'Staff',colSal:'Monthly salary',
+matT:'Branch and designation matrix',noDs:'No designation',dirT:'Staff directory',
+qPh:'ID, name, branch, designation, phone',allBr:'All branches',allDs:'All designations',
+sName:'Sort by name',sId:'Sort by ID',sSal:'Salary, high to low',sBr:'Sort by branch',sDs:'Sort by designation',
+clrAll:'Clear all filters',more:'Show more',noRes:'No employees match. Change the search or filters.',
+emptyT:'No employees yet',emptyS:'Add the first employee, or import many at once from Excel.',
+actEdit:'Edit',actDel:'Delete',rmF:'Remove filter',search:'Search',
 resetOneQ:'The part below will be erased. Take a backup first. Continue?',
 scope:'Settings apply to',scDef:'Default (all months)',scMon:'One month only',
 scDefNote:'Changes here apply to every month that has no settings of its own.',
@@ -95,7 +116,7 @@ fb:'Branch',fd:'Designation',fAll:'All',brSum:'Branch-wise totals',noBr:'No bran
 csv:'Download CSV',prt:'Print / PDF',stmt:'Monthly Salary Deduction Statement',sgPrep:'Prepared by',sgCheck:'Checked by',sgAppr:'Approved by',pDate:'Prepared on'}
 };
 const LD=()=>{const d=new Date();return new Date(d.getTime()-d.getTimezoneOffset()*6e4).toISOString().slice(0,10)};
-const D={lang:'bn',tab:'emp',month:LD().slice(0,7),edit:null,selEmp:'',selDate:LD(),scope:'def',lvEmp:'',lvCat:'',lvFrom:LD(),lvTo:LD(),fb:'',fd:'',bm:'time',
+const D={lang:'bn',tab:'emp',month:LD().slice(0,7),edit:null,selEmp:'',selDate:LD(),scope:'def',lvEmp:'',lvCat:'',lvFrom:LD(),lvTo:LD(),fb:'',fd:'',bm:'time',eq:'',eb:'',ed:'',es:'name',ep:50,add:false,emx:false,
 s:{ld:{on:true,days:3,deduct:1,rep:true,skip:true},wd:26,wh:8,late:true,early:true,absent:true,grace:0,ti:'09:00',to:'17:00'},ms:{},emps:[],recs:[],leaves:[],
 lc:[{id:'cl',paid:true,quota:10,per:'year'},{id:'sl',paid:true,quota:14,per:'year'},{id:'ul',paid:false,quota:0,per:'month'}]};
 const clone=o=>JSON.parse(JSON.stringify(o));
@@ -121,12 +142,12 @@ const lbl=(x,h)=>`<label class="block text-xs text-slate-500 mb-1">${x}</label>$
 const getP=(o,p)=>p.split('.').reduce((a,k)=>a[k],o);
 const setP=(o,p,v)=>{const a=p.split('.'),l=a.pop();a.reduce((x,k)=>x[k],o)[l]=v};
 const MRE=/^\d{4}-\d{2}$/,DRE=/^\d{4}-\d{2}-\d{2}$/;
-
+ 
 /* Month-wise settings: a month uses its own settings if it has any, otherwise the default. */
 const cfg=m=>S.ms[m]||S.s;
 const cv=()=>S.scope=='month'?cfg(S.month):S.s;
 const ct=()=>S.scope=='month'?(S.ms[S.month]||(S.ms[S.month]=norm(S.s))):S.s;
-
+ 
 /* Time, date and filter helpers */
 function tm(x){const m=String(x||'').trim().match(/^(\d{1,2})[:.](\d{2})(?::\d{2})?\s*([ap]m)?$/i);if(!m)return null;let h=+m[1];const mi=+m[2];
  if(m[3]){if(h<1||h>12)return null;h=h%12+(m[3].toLowerCase()=='pm'?12:0)}
@@ -145,7 +166,7 @@ const filt=()=>{
  const sel=(f,key,v)=>{const u=uniq(key);return u.length?`<label class="flex items-center gap-2 text-sm text-slate-500">${t(f)}<select data-f="${f}" class="${inp} !w-auto"><option value="">${t('fAll')}</option>${u.map(x=>`<option value="${esc(x)}" ${x==v?'selected':''}>${esc(x)}</option>`).join('')}</select></label>`:''};
  return sel('fb','branch',S.fb)+sel('fd','desig',S.fd);
 };
-
+ 
 /* Leave: unpaid leave, and paid leave beyond its quota (quota 0 = no limit), is deducted at one day of salary. */
 const dn=c=>c.name||T[S.lang]['lcd_'+c.id]||t('newCat');
 function lvCalc(e,mo){
@@ -160,7 +181,7 @@ function lvCalc(e,mo){
  const used=c=>cnt[c.id+'|'+(c.per=='month'?mo:mo.slice(0,4))]||0;
  return{vd,vx,used};
 }
-
+ 
 function calc(e,mo=S.month){
  const s=cfg(mo),r=S.recs.filter(x=>x.emp==e.id&&x.date.startsWith(mo)).sort((a,b)=>a.date.localeCompare(b.date));
  let ld=0,m=0;
@@ -180,7 +201,7 @@ function calc(e,mo=S.month){
  const lv=lvCalc(e,mo),vded=lv.vx*e.salary/wd,dd=n*e.salary/wd,md=m*rate,tot=Math.min(e.salary,dd+md+vded);
  return{ld,m,dd,md,tot,net:e.salary-tot,rate,vd:lv.vd,vx:lv.vx,vded,lv};
 }
-
+ 
 function policy(){
  const b=S.lang=='bn',s=cfg(S.month);let n=0;
  const h=x=>(b?['১','২','৩','৪','৫','৬','৭','৮'][n++]:++n)+'. '+x;
@@ -206,25 +227,125 @@ function policy(){
  L.push('','-'.repeat(40),(b?'কর্তৃপক্ষ: ____________   কর্মচারী: ____________':'Authority: ____________   Employee: ____________'));
  return L.join('\n');
 }
-
+ 
 const tabs=[['emp','users'],['entry','clock'],['bulk','table'],['report','calculator'],['settings','settings-2'],['policy','file-text'],['data','database']];
-
-function vEmp(){
- const e=S.edit?S.emps.find(x=>x.id==S.edit):null;
- const rows=S.emps.map(x=>`<tr class="border-t border-slate-100"><td class="py-2 pr-2">${esc(x.id)}</td><td class="pr-2">${esc(x.name)}</td><td class="pr-2">${F(x.salary)}</td><td class="pr-2">${esc(x.branch)}</td><td class="pr-2">${esc(x.desig)}</td><td class="pr-2 whitespace-nowrap">${esc(x.phone)}</td>
- <td class="text-right whitespace-nowrap"><button data-act="editEmp" data-id="${esc(x.id)}" class="p-1.5 text-slate-500 hover:text-teal-700">${ico('pencil')}</button><button data-act="delEmp" data-id="${esc(x.id)}" class="p-1.5 text-slate-500 hover:text-red-600">${ico('trash-2')}</button></td></tr>`).join('');
- return `<div class="${card} grid grid-cols-2 gap-3">
+ 
+/* ---------- Employees dashboard ---------- */
+const NONE='__none__';
+const kb=e=>(e.branch||'').trim()||NONE,kd=e=>(e.desig||'').trim()||NONE;
+const kl=(k,f)=>k==NONE?t(f):k;
+const hay=e=>bdn([e.id,e.name,e.branch,e.desig,e.phone].join(' ')).toLowerCase();
+function ef(skip){
+ const q=bdn(S.eq).trim().toLowerCase();
+ return S.emps.filter(e=>(skip.includes('b')||!S.eb||kb(e)==S.eb)&&(skip.includes('d')||!S.ed||kd(e)==S.ed)&&(skip.includes('q')||!q||hay(e).includes(q)));
+}
+function grp(list,fn){const m=new Map();list.forEach(e=>{const k=fn(e),g=m.get(k)||{k,n:0,sal:0};g.n++;g.sal+=+e.salary||0;m.set(k,g)});return [...m.values()]}
+const fixE=()=>{if(S.eb&&!S.emps.some(e=>kb(e)==S.eb))S.eb='';if(S.ed&&!S.emps.some(e=>kd(e)==S.ed))S.ed=''};
+const last=(a,b)=>(a==NONE)-(b==NONE);
+const SORT={
+ name:(a,b)=>String(a.name).localeCompare(String(b.name)),
+ id:(a,b)=>String(a.id).localeCompare(String(b.id),undefined,{numeric:true}),
+ sal:(a,b)=>b.salary-a.salary||String(a.name).localeCompare(String(b.name)),
+ branch:(a,b)=>last(kb(a),kb(b))||kb(a).localeCompare(kb(b))||String(a.name).localeCompare(String(b.name)),
+ desig:(a,b)=>last(kd(a),kd(b))||kd(a).localeCompare(kd(b))||String(a.name).localeCompare(String(b.name))
+};
+ 
+function empToolbar(){
+ const gb=grp(S.emps,kb).sort((a,b)=>last(a.k,b.k)||a.k.localeCompare(b.k)),gd=grp(S.emps,kd).sort((a,b)=>last(a.k,b.k)||a.k.localeCompare(b.k));
+ const op=(gs,cur,all,f)=>`<option value="">${t(all)}</option>`+gs.map(g=>`<option value="${esc(g.k)}" ${g.k==cur?'selected':''}>${esc(kl(g.k,f))} (${F(g.n)})</option>`).join('');
+ const so=(v,l)=>`<option value="${v}" ${S.es==v?'selected':''}>${t(l)}</option>`;
+ return `<div class="mb-4 flex flex-wrap items-center gap-2">
+ <label class="relative min-w-[15rem] flex-1"><span class="sr-only">${t('search')}</span>${ico('search','pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-slate-400')}<input id="e-q" type="search" value="${esc(S.eq)}" placeholder="${t('qPh')}" autocomplete="off" class="${inp} !pl-9"></label>
+ <select id="e-eb" data-e="eb" aria-label="${t('fb')}" class="${inp} !w-auto">${op(gb,S.eb,'allBr','noBr')}</select>
+ <select id="e-ed" data-e="ed" aria-label="${t('fd')}" class="${inp} !w-auto">${op(gd,S.ed,'allDs','noDs')}</select>
+ <select id="e-es" data-e="es" aria-label="${t('dirT')}" class="${inp} !w-auto">${so('name','sName')}${so('id','sId')}${so('sal','sSal')}${so('branch','sBr')}${so('desig','sDs')}</select></div>`;
+}
+ 
+function empRows(gs,sel,act,nk,m){
+ const mx=Math.max(1,...gs.map(g=>g[m]));
+ return gs.map(g=>{const on=sel==g.k,dim=sel&&!on;
+  return `<button data-act="${act}" data-v="${esc(g.k)}" aria-pressed="${on}" class="block w-full rounded-lg px-3 py-2.5 text-left transition-colors ${on?'bg-teal-50':'hover:bg-slate-50'}">
+  <div class="flex items-baseline gap-3"><span class="min-w-0 flex-1 truncate text-sm ${on?'font-semibold text-slate-900':'text-slate-800'}">${esc(kl(g.k,nk))}</span><span class="w-16 text-right text-sm tabular-nums text-slate-600">${F(g.n)}</span><span class="w-28 text-right text-sm tabular-nums text-slate-600">${F(g.sal)}</span></div>
+  <div class="mt-1.5 h-2 rounded-sm bg-slate-100"><div class="h-2 rounded-r ${dim?'bg-slate-300':on?'bg-teal-700':'bg-teal-600'}" style="width:${Math.max(2,g[m]/mx*100).toFixed(1)}%"></div></div></button>`}).join('');
+}
+ 
+function empMatrix(){
+ const L=ef('bd'),bs=grp(L,kb).sort((a,b)=>b.n-a.n||a.k.localeCompare(b.k)),ds=grp(L,kd).sort((a,b)=>b.n-a.n||a.k.localeCompare(b.k)),cell=new Map();
+ L.forEach(e=>{const k=kb(e)+'\u0001'+kd(e);cell.set(k,(cell.get(k)||0)+1)});
+ const mx=Math.max(1,...cell.values());
+ const hd=ds.map(d=>`<th class="whitespace-nowrap px-2 pb-2 text-right font-medium">${esc(kl(d.k,'noDs'))}</th>`).join('');
+ const body=bs.map(b=>`<tr class="border-t border-slate-100"><td class="whitespace-nowrap py-2 pr-3 text-sm text-slate-800">${esc(kl(b.k,'noBr'))}</td>${ds.map(d=>{const c=cell.get(b.k+'\u0001'+d.k)||0;return `<td class="px-2 py-2 text-right text-sm tabular-nums" ${c?`style="background:rgba(13,148,136,${(0.08+0.32*c/mx).toFixed(2)})"`:''}>${c?F(c):'<span class="text-slate-300">–</span>'}</td>`}).join('')}<td class="px-2 text-right text-sm font-medium tabular-nums">${F(b.n)}</td></tr>`).join('');
+ const foot=`<tr class="border-t border-slate-300 font-medium"><td class="py-2 text-sm">${t('total')}</td>${ds.map(d=>`<td class="px-2 text-right text-sm tabular-nums">${F(d.n)}</td>`).join('')}<td class="px-2 text-right text-sm tabular-nums">${F(L.length)}</td></tr>`;
+ return `<details id="emx" class="rounded-xl border border-slate-200 bg-white" ${S.emx?'open':''}><summary class="cursor-pointer select-none rounded-xl px-4 py-3 text-sm font-medium text-slate-800">${t('matT')}</summary><div class="overflow-x-auto px-4 pb-4"><table class="w-full"><thead class="text-xs text-slate-500"><tr><th class="pb-2 text-left font-medium">${t('fb')}</th>${hd}<th class="px-2 pb-2 text-right font-medium">${t('total')}</th></tr></thead><tbody>${body}${foot}</tbody></table></div></details>`;
+}
+ 
+function vEmpDyn(){
+ const list=ef(''),n=list.length,tot=S.emps.length,sal=list.reduce((a,e)=>a+(+e.salary||0),0),on=!!(S.eq||S.eb||S.ed),bn=S.lang=='bn',u=t('unitP');
+ const gB=grp(ef('b'),kb).sort((a,b)=>b.sal-a.sal||b.n-a.n||a.k.localeCompare(b.k)),gD=grp(ef('d'),kd).sort((a,b)=>b.n-a.n||b.sal-a.sal||a.k.localeCompare(b.k));
+ const lB=grp(list,kb).filter(g=>g.k!=NONE).sort((a,b)=>b.n-a.n||a.k.localeCompare(b.k)),lD=grp(list,kd).filter(g=>g.k!=NONE).sort((a,b)=>b.n-a.n||a.k.localeCompare(b.k));
+ const sub=(g,k)=>g?`${t(k)}: ${esc(g.k)} (${F(g.n)} ${u})`:'–';
+ const hero=`<section class="rounded-2xl border border-slate-200 bg-white md:flex">
+ <div class="p-6 md:w-72 md:flex-none"><div class="text-sm text-slate-500">${t('kStaff')}</div><div class="mt-1 text-6xl font-semibold leading-none tracking-tight text-slate-900">${F(n)}</div>${on?`<div class="mt-3 text-xs text-slate-500">${bn?`মোট ${F(tot)} জনের মধ্যে`:`of ${F(tot)} total`}</div>`:''}</div>
+ <dl class="grid flex-1 grid-cols-2 border-t border-slate-200 md:grid-cols-3 md:border-l md:border-t-0">
+ <div class="p-6"><dt class="text-sm text-slate-500">${t('kSal')}</dt><dd class="mt-1 whitespace-nowrap text-2xl font-semibold text-slate-900">৳ ${F(sal)}</dd><dd class="mt-1 whitespace-nowrap text-xs text-slate-500">${t('kAvg')}: ৳ ${F(n?Math.round(sal/n):0)}</dd></div>
+ <div class="border-l border-slate-200 p-6"><dt class="text-sm text-slate-500">${t('kBr')}</dt><dd class="mt-1 text-2xl font-semibold text-slate-900">${F(lB.length)}</dd><dd class="mt-1 break-words text-xs text-slate-500">${sub(lB[0],'kBig')}</dd></div>
+ <div class="col-span-2 border-t border-slate-200 p-6 md:col-span-1 md:border-l md:border-t-0"><dt class="text-sm text-slate-500">${t('kDs')}</dt><dd class="mt-1 text-2xl font-semibold text-slate-900">${F(lD.length)}</dd><dd class="mt-1 break-words text-xs text-slate-500">${sub(lD[0],'kTop')}</dd></div></dl></section>`;
+ const mark='<span class="mr-1.5 inline-block h-2 w-2 rounded-sm bg-teal-600"></span>';
+ const cols=(a,m1,m2)=>`<div class="flex gap-3 px-3 pb-1 text-xs text-slate-500"><span class="flex-1">${t(a)}</span><span class="w-16 text-right">${m1?mark:''}${t('colStaff')}</span><span class="w-28 text-right">${m2?mark:''}${t('colSal')}</span></div>`;
+ const totRow=gs=>`<div class="flex gap-3 border-t border-slate-100 px-3 pt-2.5 text-sm font-medium text-slate-900"><span class="flex-1">${t('total')}</span><span class="w-16 text-right tabular-nums">${F(gs.reduce((a,g)=>a+g.n,0))}</span><span class="w-28 text-right tabular-nums">${F(gs.reduce((a,g)=>a+g.sal,0))}</span></div>`;
+ const none=`<p class="py-6 text-center text-sm text-slate-400">${t('noData')}</p>`;
+ const cards=`<div class="grid gap-4 lg:grid-cols-5">
+ <section class="rounded-xl border border-slate-200 bg-white pb-3 lg:col-span-3"><h3 class="px-4 pb-2 pt-4 text-sm font-semibold text-slate-900">${t('brCard')}</h3><div class="px-1">${cols('fb',0,1)}<div>${gB.length?empRows(gB,S.eb,'eBr','noBr','sal'):none}</div>${gB.length?totRow(gB):''}</div></section>
+ <section class="rounded-xl border border-slate-200 bg-white pb-3 lg:col-span-2"><h3 class="px-4 pb-2 pt-4 text-sm font-semibold text-slate-900">${t('dsCard')}</h3><div class="px-1">${cols('fd',1,0)}<div>${gD.length?empRows(gD,S.ed,'eDs','noDs','n'):none}</div>${gD.length?totRow(gD):''}</div></section></div>`;
+ const chip=(txt,a)=>`<button data-act="${a}" aria-label="${t('rmF')}: ${esc(txt)}" class="inline-flex items-center gap-1 rounded-full bg-slate-100 py-1 pl-3 pr-2 text-xs text-slate-700 hover:bg-slate-200">${esc(txt)}${ico('x')}</button>`;
+ const chips=on?`<div class="flex flex-wrap items-center gap-2 px-4 pb-3">${S.eq?chip('"'+S.eq+'"','eClrQ'):''}${S.eb?chip(kl(S.eb,'noBr'),'eClrB'):''}${S.ed?chip(kl(S.ed,'noDs'),'eClrD'):''}<button data-act="eClr" class="px-1 text-xs text-teal-700 hover:underline">${t('clrAll')}</button></div>`:'';
+ const sorted=[...list].sort(SORT[S.es]||SORT.name),shown=sorted.slice(0,S.ep);
+ const dash='<span class="text-slate-300">–</span>';
+ const row=e=>`<tr class="border-t border-slate-100 hover:bg-slate-50/70"><td class="py-2.5 pl-4"><div class="flex items-center gap-3"><span class="grid h-8 w-8 flex-none place-items-center rounded-full bg-teal-50 text-sm font-medium text-teal-800">${esc(Array.from(String(e.name).trim())[0]||'?')}</span><div class="min-w-0"><div class="truncate text-sm font-medium text-slate-900">${esc(e.name)}</div><div class="text-xs text-slate-500">${esc(e.id)}<span class="sm:hidden">${e.branch||e.desig?', '+esc([e.branch,e.desig].filter(Boolean).join(', ')):''}</span></div></div></div></td>
+ <td class="hidden text-sm text-slate-700 sm:table-cell">${esc(e.branch)||dash}</td><td class="hidden text-sm text-slate-700 sm:table-cell">${esc(e.desig)||dash}</td>
+ <td class="whitespace-nowrap text-right text-sm tabular-nums text-slate-900">${F(e.salary)}</td><td class="hidden whitespace-nowrap text-sm text-slate-600 lg:table-cell">${esc(e.phone)||dash}</td>
+ <td class="whitespace-nowrap pr-3 text-right"><button data-act="editEmp" data-id="${esc(e.id)}" aria-label="${t('actEdit')}: ${esc(e.name)}" title="${t('actEdit')}" class="rounded-lg p-1.5 text-slate-500 hover:bg-slate-100 hover:text-teal-700">${ico('pencil')}</button><button data-act="delEmp" data-id="${esc(e.id)}" aria-label="${t('actDel')}: ${esc(e.name)}" title="${t('actDel')}" class="rounded-lg p-1.5 text-slate-500 hover:bg-red-50 hover:text-red-600">${ico('trash-2')}</button></td></tr>`;
+ const th=(c,x)=>`<th class="pb-2 font-medium ${c}">${t(x)}</th>`;
+ const dir=`<section class="rounded-xl border border-slate-200 bg-white"><div class="flex flex-wrap items-baseline justify-between gap-2 px-4 pb-3 pt-4"><h3 class="text-sm font-semibold text-slate-900">${t('dirT')}</h3><span class="text-xs text-slate-500">${bn?`${F(n)} জন দেখানো হচ্ছে`:`Showing ${F(n)} of ${F(tot)}`}</span></div>${chips}
+ ${n?`<div class="overflow-x-auto"><table class="w-full text-left"><thead class="text-xs text-slate-500"><tr><th class="pb-2 pl-4 font-medium">${t('employee')}</th>${th('hidden sm:table-cell','fb')}${th('hidden sm:table-cell','fd')}${th('text-right','salary')}${th('hidden lg:table-cell','phone')}<th class="pb-2"></th></tr></thead><tbody>${shown.map(row).join('')}</tbody></table></div>
+ ${n>shown.length?`<div class="border-t border-slate-100 p-3 text-center"><button data-act="eMore" class="${btn2}">${t('more')} (${F(n-shown.length)})</button></div>`:''}`:`<p class="border-t border-slate-100 px-4 py-10 text-center text-sm text-slate-500">${t('noRes')}</p>`}</section>`;
+ return hero+cards+empMatrix()+dir;
+}
+ 
+function empRefresh(){
+ const d=$('emp-dyn');if(!d)return;
+ d.innerHTML=vEmpDyn();
+ ['eb','ed','es'].forEach(k=>{const el=$('e-'+k);if(el)el.value=S[k]});
+ lucide.createIcons();
+}
+ 
+function vEmpForm(){
+ const e=S.edit?S.emps.find(x=>x.id==S.edit):null,ttl=t(e?'editEmpT':'newEmp');
+ const dl=(id,key)=>`<datalist id="${id}">${uniq(key).map(x=>`<option value="${esc(x)}">`).join('')}</datalist>`;
+ return `<div data-modal class="fixed inset-0 z-40 flex items-end justify-center sm:items-center sm:p-4 print:hidden" role="dialog" aria-modal="true" aria-label="${ttl}">
+ <div data-act="cancelEdit" class="absolute inset-0 bg-slate-900/40"></div>
+ <div class="relative max-h-[92vh] w-full overflow-y-auto rounded-t-2xl bg-white p-5 shadow-xl sm:max-w-lg sm:rounded-2xl">
+ <div class="mb-4 flex items-center justify-between"><h3 class="text-base font-semibold text-slate-900">${ttl}</h3><button data-act="cancelEdit" aria-label="${t('cancel')}" class="rounded-lg p-1.5 text-slate-500 hover:bg-slate-100">${ico('x')}</button></div>
+ <div class="grid grid-cols-2 gap-3">
  <div>${lbl(t('id'),`<input id="f-id" class="${inp}" value="${e?esc(e.id):''}" ${e?'readonly':''}>`)}</div>
  <div>${lbl(t('name'),`<input id="f-name" class="${inp}" value="${e?esc(e.name):''}">`)}</div>
  <div>${lbl(t('salary'),`<input id="f-sal" type="number" min="0" class="${inp}" value="${e?e.salary:''}">`)}</div>
- <div>${lbl(t('branch'),`<input id="f-br" class="${inp}" value="${e?esc(e.branch):''}">`)}</div>
- <div>${lbl(t('desig'),`<input id="f-des" class="${inp}" value="${e?esc(e.desig):''}">`)}</div>
  <div>${lbl(t('phone'),`<input id="f-ph" type="tel" inputmode="tel" class="${inp}" value="${e?esc(e.phone):''}">`)}</div>
- <div class="col-span-2 flex gap-2"><button data-act="saveEmp" class="${btn}">${ico('check')}${t('save')}</button>${e?`<button data-act="cancelEdit" class="${btn2}">${t('cancel')}</button>`:''}<button data-act="togImp" class="${btn2} ml-auto">${ico('clipboard-paste')}${t('imp')}</button></div></div>
- ${S.imp?`<div class="${card} mt-4"><p class="text-xs text-slate-500 mb-2">${t('impHint')}</p><textarea id="imp-t" rows="6" class="${inp}" placeholder="E001   রহিম   25000   ঢাকা   ম্যানেজার   01700000000"></textarea><button data-act="doImp" class="${btn} mt-3">${ico('upload')}${t('impBtn')}</button></div>`:''}
- <div class="${card} mt-4 overflow-x-auto">${S.emps.length?`<table class="w-full text-sm"><thead class="text-xs text-slate-500 text-left"><tr><th class="pb-2 font-medium">${t('id')}</th><th class="pb-2 font-medium">${t('name')}</th><th class="pb-2 font-medium">${t('salary')}</th><th class="pb-2 font-medium">${t('branch')}</th><th class="pb-2 font-medium">${t('desig')}</th><th class="pb-2 font-medium">${t('phone')}</th><th></th></tr></thead><tbody>${rows}</tbody></table>`:`<p class="text-sm text-slate-400 text-center py-4">${t('noData')}</p>`}</div>`;
+ <div>${lbl(t('branch'),`<input id="f-br" list="dl-br" class="${inp}" value="${e?esc(e.branch):''}">`)}</div>
+ <div>${lbl(t('desig'),`<input id="f-des" list="dl-ds" class="${inp}" value="${e?esc(e.desig):''}">`)}</div></div>
+ ${dl('dl-br','branch')}${dl('dl-ds','desig')}
+ <div class="mt-5 flex justify-end gap-2"><button data-act="cancelEdit" class="${btn2}">${t('cancel')}</button><button data-act="saveEmp" class="${btn}">${ico('check')}${t('save')}</button></div></div></div>`;
 }
-
+ 
+function vEmp(){
+ fixE();
+ const head=`<div class="mb-5 flex flex-wrap items-end justify-between gap-3"><div class="min-w-0"><h2 class="text-xl font-semibold text-slate-900">${t('empDash')}</h2><p class="mt-1 max-w-xl text-sm text-slate-500">${t('empSub')}</p></div>
+ <div class="flex gap-2"><button data-act="togImp" class="${btn2}">${ico('clipboard-paste')}${t('imp')}</button><button data-act="newEmp" class="${btn}">${ico('plus')}${t('newEmp')}</button></div></div>`;
+ const imp=S.imp?`<div class="${card} mb-5"><p class="mb-2 text-xs text-slate-500">${t('impHint')}</p><textarea id="imp-t" rows="6" class="${inp}" placeholder="E001   রহিম   25000   ঢাকা   ম্যানেজার   01700000000"></textarea><button data-act="doImp" class="${btn} mt-3">${ico('upload')}${t('impBtn')}</button></div>`:'';
+ const empty=`<div class="rounded-2xl border border-dashed border-slate-300 bg-white px-6 py-16 text-center">${ico('users','mx-auto !h-8 !w-8 text-slate-400')}<h3 class="mt-3 text-base font-semibold text-slate-900">${t('emptyT')}</h3><p class="mx-auto mt-1 max-w-sm text-sm text-slate-500">${t('emptyS')}</p></div>`;
+ return `${S.edit||S.add?vEmpForm():''}${head}${imp}${S.emps.length?empToolbar()+`<div id="emp-dyn" class="space-y-4">${vEmpDyn()}</div>`:empty}`;
+}
+ 
 function vEntry(){
  if(!S.emps.length)return `<p class="${card} text-sm text-slate-500 text-center">${t('errEmp')}</p>`;
  if(!S.emps.some(x=>x.id==S.selEmp))S.selEmp=S.emps[0].id;
@@ -242,7 +363,7 @@ function vEntry(){
  <div class="mt-4 flex items-center gap-2"><span class="text-sm text-slate-500">${t('month')}</span><input type="month" data-month value="${S.month}" class="${inp} !w-auto"></div>
  <div class="${card} mt-2 overflow-x-auto">${rs.length?`<table class="w-full text-sm"><thead class="text-xs text-slate-500 text-left"><tr><th class="pb-2 font-medium">${t('date')}</th><th class="pb-2 font-medium">${t('employee')}</th><th class="pb-2 font-medium">${t('lateMin')}</th><th class="pb-2 font-medium">${t('earlyMin')}</th><th class="pb-2 font-medium">${t('absentMin')}</th><th></th></tr></thead><tbody>${rs.map(x=>`<tr class="border-t border-slate-100"><td class="py-2 pr-2">${x.date}</td><td class="pr-2">${esc(nm(x.emp))}</td><td>${F(x.late)}</td><td>${F(x.early)}</td><td>${F(x.abs)}</td><td class="text-right"><button data-act="delRec" data-emp="${esc(x.emp)}" data-date="${x.date}" class="p-1.5 text-slate-500 hover:text-red-600">${ico('trash-2')}</button></td></tr>`).join('')}</tbody></table>`:`<p class="text-sm text-slate-400 text-center py-4">${t('noData')}</p>`}</div>${vLeave()}`;
 }
-
+ 
 function vLeave(){
  if(!S.lc.length)return `<div class="${card} mt-6 text-sm text-slate-500 text-center">${t('lvNoCat')}</div>`;
  const nm=id=>(S.emps.find(x=>x.id==id)||{}).name||id;
@@ -261,14 +382,14 @@ function vLeave(){
  <div class="col-span-2"><button data-act="saveLv" class="${btn}">${ico('check')}${t('save')}</button></div></div>
  <div class="${card} mt-2 overflow-x-auto">${ls.length?`<table class="w-full text-sm"><thead class="text-xs text-slate-500 text-left"><tr><th class="pb-2 font-medium">${t('date')}</th><th class="pb-2 font-medium">${t('employee')}</th><th class="pb-2 font-medium">${t('lvCat')}</th><th></th></tr></thead><tbody>${ls.map(x=>`<tr class="border-t border-slate-100"><td class="py-2 pr-2">${x.date}</td><td class="pr-2">${esc(nm(x.emp))}</td><td class="pr-2">${esc(cn(x.cat))}</td><td class="text-right"><button data-act="delLv" data-emp="${esc(x.emp)}" data-date="${x.date}" class="p-1.5 text-slate-500 hover:text-red-600">${ico('trash-2')}</button></td></tr>`).join('')}</tbody></table>`:`<p class="text-sm text-slate-400 text-center py-4">${t('noData')}</p>`}</div>`;
 }
-
+ 
 function vLeaveBal(){
  if(!S.leaves.length||!S.emps.length||!S.lc.length)return '';
  const rows=fe().map(e=>{const r=lvCalc(e,S.month);return `<tr class="border-t border-slate-100"><td class="py-2 pr-2">${esc(e.name)}</td>${S.lc.map(c=>`<td>${F(r.used(c))}${c.paid&&c.quota>0?' / '+F(c.quota):''}</td>`).join('')}</tr>`}).join('');
  const sub=c=>c.paid?(c.quota>0?t(c.per=='month'?'perMonth':'perYear'):''):t('pUnpaid');
  return `<div class="${card} mt-4 overflow-x-auto"><div class="text-sm font-medium mb-2">${t('lvBal')}</div><table class="w-full text-sm"><thead class="text-xs text-slate-500 text-left"><tr><th class="pb-2 font-medium">${t('employee')}</th>${S.lc.map(c=>`<th class="pb-2 font-medium">${esc(dn(c))}<div class="font-normal text-slate-400">${sub(c)}</div></th>`).join('')}</tr></thead><tbody>${rows}</tbody></table></div>`;
 }
-
+ 
 function monthSum(){
  const ms=[...new Set([...S.recs.map(x=>x.date.slice(0,7)),...S.leaves.map(x=>x.date.slice(0,7)),...Object.keys(S.ms)])].sort().reverse();
  if(!ms.length||!S.emps.length)return '';
@@ -276,7 +397,7 @@ function monthSum(){
   return `<tr data-act="pickMonth" data-m="${m}" class="border-t border-slate-100 cursor-pointer hover:bg-slate-50 ${m==S.month?'bg-teal-50/60':''}"><td class="py-2 pr-2 whitespace-nowrap">${m}${S.ms[m]?' '+badge():''}</td><td>${F(a.ld)}</td><td>${F(a.tot)}</td><td class="text-right font-medium">${F(a.net)}</td></tr>`}).join('');
  return `<div class="${card} mt-4 overflow-x-auto"><div class="text-sm font-medium mb-2">${t('monthSum')}</div><table class="w-full text-sm"><thead class="text-xs text-slate-500 text-left"><tr><th class="pb-2 font-medium">${t('month')}</th><th class="pb-2 font-medium">${t('lateDays')}</th><th class="pb-2 font-medium">${t('dedAll')}</th><th class="pb-2 font-medium text-right">${t('net')}</th></tr></thead><tbody>${rows}</tbody></table></div>`;
 }
-
+ 
 function vReport(){
  fixF();
  const list=fe(),T0={ld:0,m:0,dd:0,md:0,tot:0,net:0,vd:0,vded:0,sal:0},G={};
@@ -298,7 +419,7 @@ function vReport(){
  ${brTbl}${list.length?sig:''}
  <div class="print:hidden">${vLeaveBal()}${monthSum()}</div>`;
 }
-
+ 
 const sw=(p,l)=>`<div class="flex items-center justify-between py-2"><span class="text-sm">${l}</span><button data-sw="${p}" role="switch" aria-checked="${getP(cv(),p)}" class="relative w-10 h-6 rounded-full ${getP(cv(),p)?'bg-teal-700':'bg-slate-300'}"><span class="absolute top-1 ${getP(cv(),p)?'left-5':'left-1'} w-4 h-4 bg-white rounded-full transition-all"></span></button></div>`;
 const nf=(p,l,dis)=>`<div class="flex items-center justify-between py-2 gap-3 ${dis?'opacity-40':''}"><span class="text-sm">${l}</span><input type="number" min="0" step="any" data-set="${p}" value="${getP(cv(),p)}" ${dis?'disabled':''} class="${inp} !w-24 text-right"></div>`;
 const tf=(p,l)=>`<div class="flex items-center justify-between py-2 gap-3"><span class="text-sm">${l}</span><input type="time" data-time="${p}" value="${getP(cv(),p)}" class="${inp} !w-32 text-right"></div>`;
@@ -330,7 +451,7 @@ function vPolicy(){
  return `<div class="mb-3 flex items-center gap-2 flex-wrap"><span class="text-sm text-slate-500">${t('month')}</span><input type="month" data-month value="${S.month}" class="${inp} !w-auto">${S.ms[S.month]?badge():''}</div>
  <div class="${card}"><pre class="text-sm whitespace-pre-wrap leading-relaxed">${esc(policy())}</pre></div><button data-act="dl" class="${btn} mt-4">${ico('download')}${t('dl')}</button>`;
 }
-
+ 
 /* Data tab: backup, restore and reset by category */
 const cats={all:{l:'catAll'},emp:{l:'catEmp'},rec:{l:'catRec'},recm:{l:'catRecM'},lv:{l:'catLv'},lvm:{l:'catLvM'},lvc:{l:'catLvC'},set:{l:'catSet'}};
 function vData(){
@@ -347,7 +468,7 @@ function vData(){
  <div class="flex items-center gap-2 mb-3"><span class="text-sm text-slate-500">${t('month')}</span><input type="month" data-month value="${S.month}" class="${inp} !w-auto"></div>
  <div class="${card}"><div class="text-sm font-medium">${t('data')}</div><p class="text-xs text-slate-500 mt-1 mb-1">${t('rsRow')}</p>${Object.keys(cats).map(row).join('')}</div>`;
 }
-
+ 
 function autoTime(){
  const i=tm($('r-in').value),o=tm($('r-out').value),c=cfg((($('r-date').value)||S.selDate).slice(0,7));
  if(i!==null)$('r-late').value=Math.max(0,i-tm(c.ti));
@@ -360,15 +481,17 @@ function vBulk(){
  <textarea id="imp-a" rows="6" class="${inp}" placeholder="E001   2026-11-07   09:25   16:40   0"></textarea>
  <button data-act="doImpA" class="${btn} mt-3">${ico('upload')}${t('impBtn')}</button></div>`;
 }
-
+ 
 function render(){
  document.documentElement.lang=S.lang;document.title=t('app');
+ $('app').className='mx-auto px-4 pb-16 print:max-w-none print:px-0 print:pb-0 '+(S.tab=='emp'?'max-w-6xl':'max-w-3xl');
  const body={emp:vEmp,entry:vEntry,bulk:vBulk,report:vReport,settings:vSet,policy:vPolicy,data:vData}[S.tab]();
  $('app').innerHTML=`<header class="pt-6 pb-4 flex items-center gap-2 text-teal-700 print:hidden">${ico('timer','!w-6 !h-6')}<h1 class="text-xl font-semibold text-slate-900">${t('app')}</h1></header>
  <nav class="flex gap-1 overflow-x-auto mb-4 border-b border-slate-200 print:hidden">${tabs.map(([k,i])=>`<button data-act="tab" data-t="${k}" class="flex items-center gap-1.5 px-3 py-2 text-sm whitespace-nowrap border-b-2 -mb-px ${S.tab==k?'border-teal-700 text-teal-700 font-medium':'border-transparent text-slate-500 hover:text-slate-800'}">${ico(i)}${t(k)}</button>`).join('')}</nav>${body}`;
  lucide.createIcons();
+ if(S.tab=='emp'&&(S.edit||S.add)){const f=$('f-id'),g=f&&f.readOnly?$('f-name'):f;if(g)g.focus()}
 }
-
+ 
 const dlFile=(name,txt,type)=>{
  const a=document.createElement('a');
  a.href=URL.createObjectURL(new Blob([txt],{type}));a.download=name;a.click();
@@ -427,10 +550,10 @@ function restoreFile(f,cat='auto'){
  };
  r.readAsText(f);
 }
-
+ 
 const val=i=>$(i).value.trim();
 const A={
- tab(d){S.tab=d.t;S.edit=null;render()},
+ tab(d){S.tab=d.t;S.edit=null;S.add=false;render()},
  lang(d){S.lang=d.v;save();render()},
  scope(d){S.scope=d.v;render()},
  rmCfg(){delete S.ms[S.month];save();render()},
@@ -439,7 +562,7 @@ const A={
   const id=val('f-id'),name=val('f-name'),salary=+val('f-sal'),branch=val('f-br'),desig=val('f-des'),phone=val('f-ph');
   if(!id||!name||!(salary>0))return alert(t('errReq'));
   if(S.edit)Object.assign(S.emps.find(x=>x.id==S.edit),{name,salary,branch,desig,phone}),S.edit=null;
-  else{if(S.emps.some(x=>x.id==id))return alert(t('errDup'));S.emps.push({id,name,salary,branch,desig,phone})}
+  else{if(S.emps.some(x=>x.id==id))return alert(t('errDup'));S.emps.push({id,name,salary,branch,desig,phone})}S.add=false;
   save();render();
  },
  togImp(){S.imp=!S.imp;render()},
@@ -458,8 +581,8 @@ const A={
   save();S.imp=false;render();
   alert(`${t('impAdd')}: ${F(a)}, ${t('impUpd')}: ${F(u)}, ${t('impSkip')}: ${F(k)}`);
  },
- editEmp(d){S.edit=d.id;render()},
- cancelEdit(){S.edit=null;render()},
+ editEmp(d){S.edit=d.id;S.add=false;render()},
+ cancelEdit(){S.edit=null;S.add=false;render()},
  delEmp(d){if(!confirm(t('delQ')))return;S.emps=S.emps.filter(x=>x.id!=d.id);S.recs=S.recs.filter(x=>x.emp!=d.id);S.leaves=S.leaves.filter(x=>x.emp!=d.id);save();render()},
  saveRec(){
   const emp=val('r-emp'),date=val('r-date'),late=+val('r-late')||0,early=+val('r-early')||0,abs=+val('r-abs')||0;
@@ -469,6 +592,14 @@ const A={
   S.selEmp=emp;S.selDate=date;S.month=date.slice(0,7);save();render();
  },
  delRec(d){S.recs=S.recs.filter(x=>!(x.emp==d.emp&&x.date==d.date));save();render()},
+ newEmp(){S.add=true;S.edit=null;render()},
+ eBr(d){S.eb=S.eb==d.v?'':d.v;S.ep=50;empRefresh()},
+ eDs(d){S.ed=S.ed==d.v?'':d.v;S.ep=50;empRefresh()},
+ eClrQ(){S.eq='';S.ep=50;$('e-q').value='';empRefresh()},
+ eClrB(){S.eb='';S.ep=50;empRefresh()},
+ eClrD(){S.ed='';S.ep=50;empRefresh()},
+ eClr(){S.eq='';S.eb='';S.ed='';S.ep=50;$('e-q').value='';empRefresh()},
+ eMore(){S.ep+=50;empRefresh()},
  doImpA(){
   const mode=$('b-mode').value;S.bm=mode;
   const rows=$('imp-a').value.replace(/\r/g,'').split('\n').filter(l=>l.trim());
@@ -555,6 +686,7 @@ document.addEventListener('change',e=>{
  if(el.dataset.set!==undefined){setP(ct(),el.dataset.set,Math.max(0,+el.value||0));save();render()}
  else if(el.dataset.time!==undefined){if(tm(el.value)!==null){setP(ct(),el.dataset.time,el.value);save()}render()}
  else if(el.dataset.f!==undefined){S[el.dataset.f]=el.value;render()}
+ else if(el.dataset.e!==undefined){S[el.dataset.e]=el.value;S.ep=50;empRefresh()}
  else if(el.id=='b-mode')S.bm=el.value;
  else if(el.id=='r-in'||el.id=='r-out')autoTime();
  else if(el.hasAttribute('data-month')&&el.value){S.month=el.value;render()}
@@ -570,7 +702,15 @@ document.addEventListener('change',e=>{
  }
  else if(el.dataset.rs!==undefined){const f=el.files&&el.files[0];el.value='';if(f)restoreFile(f,el.dataset.rs)}
 });
+document.addEventListener('input',e=>{if(e.target.id=='e-q'){S.eq=e.target.value;S.ep=50;empRefresh()}});
+document.addEventListener('toggle',e=>{if(e.target.id=='emx')S.emx=e.target.open},true);
+document.addEventListener('keydown',e=>{
+ if(!(S.tab=='emp'&&(S.edit||S.add)))return;
+ if(e.key=='Escape')A.cancelEdit();
+ else if(e.key=='Enter'&&e.target.tagName=='INPUT'&&e.target.closest('[data-modal]'))A.saveEmp();
+});
 render();
 </script>
 </body>
 </html>
+ 
