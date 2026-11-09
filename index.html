@@ -40,7 +40,7 @@ catAll:'সব ডেটা',catEmp:'কর্মচারী তালিকা
 empU:'জন কর্মচারী',recU:'টি এন্ট্রি',setU:'টি মাসের আলাদা সেটিংস',
 rsHint:'ব্যাকআপ ফাইল (.json) নির্বাচন করলে ফাইলে থাকা অংশগুলো বর্তমান ডেটার জায়গায় বসবে।',
 rsQ:'রিস্টোর করলে নিচের অংশগুলো বর্তমান ডেটা প্রতিস্থাপন করবে। নিশ্চিত?',rsOk:'রিস্টোর সম্পন্ন হয়েছে',rsErr:'ব্যাকআপ ফাইলটি সঠিক নয়',rsB:'রিস্টোর',rsNone:'এই ব্যাকআপ ফাইলে নির্বাচিত অংশটি নেই',rsRow:'প্রতিটি সারির "রিস্টোর" বোতাম শুধু সেই অংশটি ফিরিয়ে আনে, ফাইলে অন্য অংশ থাকলেও।',rsTitle:'ব্যাকআপ ফাইল থেকে রিস্টোর',
-empDash:'কর্মচারী ড্যাশবোর্ড',empSub:'ব্রাঞ্চ, পদবি ও বেতন এক নজরে। কোনো ব্রাঞ্চ বা পদবিতে চাপ দিলে নিচের তালিকা সেই অনুযায়ী ফিল্টার হবে।',
+empDash:'কর্মচারী ড্যাশবোর্ড',empSub:'ব্রাঞ্চ, পদবি ও বেতন এক নজরে। কোনো ব্রাঞ্চ বা পদবিতে চাপ দিলে নিচের তালিকা সেই অনুযায়ী ফিল্টার হবে। কর্মচারীর নামে চাপ দিলে তাঁর পূর্ণ তথ্য দেখা যাবে।',
 newEmp:'নতুন কর্মচারী',editEmpT:'কর্মচারীর তথ্য সম্পাদনা',
 kStaff:'মোট কর্মচারী',kSal:'মাসিক মোট বেতন',kAvg:'গড় বেতন',kBr:'ব্রাঞ্চ',kDs:'পদবি',kBig:'সবচেয়ে বড়',kTop:'সবচেয়ে বেশি',unitP:'জন',
 brCard:'ব্রাঞ্চ অনুযায়ী বেতন ও কর্মচারী',dsCard:'পদবি অনুযায়ী কর্মচারী',colStaff:'কর্মচারী',colSal:'মাসিক বেতন',
@@ -76,6 +76,7 @@ otHintE:'ইন/আউট সময় দিলে লেট ও আগে ত�
 impAT:'Excel থেকে হাজিরা পেস্ট',modeT:'কলামের ক্রম',modeTime:'আইডি, তারিখ, ইন সময়, আউট সময়, মাঝে অনুপস্থিত (মিনিট)',modeMin:'আইডি, তারিখ, লেট, আগে ত্যাগ, মাঝে অনুপস্থিত (মিনিট)',
 impAtHint:'Excel থেকে সারি কপি করে পেস্ট করুন। তারিখ 2026-11-07 বা 07/11/2026 আকারে দিন। একই কর্মচারী ও তারিখের এন্ট্রি থাকলে বদলে যাবে। প্রথম সারি হেডার হলে বাদ যাবে।',impOn:'সময়মতো',
 fb:'ব্রাঞ্চ',fd:'পদবি',fAll:'সব',brSum:'ব্রাঞ্চভিত্তিক মোট',noBr:'ব্রাঞ্চ নেই',
+viewT:'কর্মচারীর পূর্ণ তথ্য',actView:'পূর্ণ তথ্য দেখুন',closeB:'বন্ধ করুন',pInfo:'ব্যক্তিগত ও চাকরির তথ্য',pDaily:'দৈনিক বেতন',pMinR:'প্রতি মিনিটের হার',pEntAll:'মোট এন্ট্রি (সব মাস)',pLvAll:'মোট ছুটি (সব মাস, দিন)',pMonthT:'মাসের হিসাব',pEnt:'এন্ট্রি (দিন)',pDedMin:'কর্তনযোগ্য মিনিট',pLvDeduct:'কর্তনযোগ্য ছুটি (দিন)',pOffice:'অফিস সময় ও কর্মদিবস',pNoLimit:'সীমা নেই',pLvList:'এই মাসের ছুটি',pEntT:'এই মাসের এন্ট্রি',pOffV:'মাসে কর্মদিবস',
 csv:'CSV ডাউনলোড',prt:'প্রিন্ট / PDF',stmt:'মাসিক বেতন কর্তনের বিবরণী',sgPrep:'প্রস্তুতকারী',sgCheck:'যাচাইকারী',sgAppr:'অনুমোদনকারী',pDate:'প্রস্তুতের তারিখ'},
 en:{app:'HajiraHisab',emp:'Employees',entry:'Entry',report:'Report',settings:'Settings',policy:'Policy',
 id:'ID',name:'Name',salary:'Salary',branch:'Branch',desig:'Designation',phone:'Phone number',save:'Save',imp:'Paste from Excel',impBtn:'Import',impAdd:'New',impUpd:'Updated',impSkip:'Skipped',
@@ -94,7 +95,7 @@ catAll:'All data',catEmp:'Employees',catRec:'Attendance entries (all months)',ca
 empU:'employees',recU:'entries',setU:'month-specific settings',
 rsHint:'Choose a backup file (.json). The parts it contains will replace the current data.',
 rsQ:'Restoring will replace the current data for the parts below. Continue?',rsOk:'Restore complete',rsErr:'This backup file is not valid',rsB:'Restore',rsNone:'This backup file does not contain the selected part',rsRow:'The Restore button on each row brings back only that part, even if the file holds more.',rsTitle:'Restore from a backup file',
-empDash:'Staff dashboard',empSub:'Branches, designations and salary at a glance. Select a branch or designation to filter the list below.',
+empDash:'Staff dashboard',empSub:'Branches, designations and salary at a glance. Select a branch or designation to filter the list below. Select a staff member to see the full profile.',
 newEmp:'New employee',editEmpT:'Edit employee',
 kStaff:'Total staff',kSal:'Total monthly salary',kAvg:'Average salary',kBr:'Branches',kDs:'Designations',kBig:'Largest',kTop:'Most staff',unitP:'staff',
 brCard:'Salary and staff by branch',dsCard:'Staff by designation',colStaff:'Staff',colSal:'Monthly salary',
@@ -129,10 +130,11 @@ otHintE:'In/out times fill the late and early-leave minutes automatically. Offic
 impAT:'Paste attendance from Excel',modeT:'Column order',modeTime:'ID, Date, In time, Out time, Absent in-between (min)',modeMin:'ID, Date, Late, Early leave, Absent in-between (min)',
 impAtHint:'Copy rows from Excel and paste. Dates as 2026-11-07 or 07/11/2026. An existing entry for the same employee and date is replaced. A header row is ignored.',impOn:'On time',
 fb:'Branch',fd:'Designation',fAll:'All',brSum:'Branch-wise totals',noBr:'No branch',
+viewT:'Employee profile',actView:'View full details',closeB:'Close',pInfo:'Personal and job details',pDaily:'Daily salary',pMinR:'Rate per minute',pEntAll:'Entries (all months)',pLvAll:'Leave days (all months)',pMonthT:'Month summary',pEnt:'Entries (days)',pDedMin:'Deductible minutes',pLvDeduct:'Deductible leave (days)',pOffice:'Office time and working days',pNoLimit:'No limit',pLvList:'Leave this month',pEntT:'Entries this month',pOffV:'working days',
 csv:'Download CSV',prt:'Print / PDF',stmt:'Monthly Salary Deduction Statement',sgPrep:'Prepared by',sgCheck:'Checked by',sgAppr:'Approved by',pDate:'Prepared on'}
 };
 const LD=()=>{const d=new Date();return new Date(d.getTime()-d.getTimezoneOffset()*6e4).toISOString().slice(0,10)};
-const D={lang:'bn',tab:'emp',month:LD().slice(0,7),edit:null,selEmp:'',selDate:LD(),scope:'def',lvEmp:'',lvCat:'',lvFrom:LD(),lvTo:LD(),fb:'',fd:'',bm:'time',eq:'',eb:'',ed:'',es:'name',ep:50,add:false,emx:false,nq:'',nb:'',nd:'',ns:'all',nso:'name',nrg:'month',nlp:50,nrp:50,
+const D={lang:'bn',tab:'emp',month:LD().slice(0,7),edit:null,selEmp:'',selDate:LD(),scope:'def',lvEmp:'',lvCat:'',lvFrom:LD(),lvTo:LD(),fb:'',fd:'',bm:'time',eq:'',eb:'',ed:'',es:'name',ep:50,add:false,emx:false,view:null,vm:'',nq:'',nb:'',nd:'',ns:'all',nso:'name',nrg:'month',nlp:50,nrp:50,
 s:{ld:{on:true,days:3,deduct:1,rep:true,skip:true},wd:26,wh:8,late:true,early:true,absent:true,grace:0,ti:'09:00',to:'17:00'},ms:{},emps:[],recs:[],leaves:[],
 lc:[{id:'cl',paid:true,quota:10,per:'year'},{id:'sl',paid:true,quota:14,per:'year'},{id:'ul',paid:false,quota:0,per:'month'}]};
 const clone=o=>JSON.parse(JSON.stringify(o));
@@ -317,10 +319,10 @@ function vEmpDyn(){
  const chips=on?`<div class="flex flex-wrap items-center gap-2 px-4 pb-3">${S.eq?chip('"'+S.eq+'"','eClrQ'):''}${S.eb?chip(kl(S.eb,'noBr'),'eClrB'):''}${S.ed?chip(kl(S.ed,'noDs'),'eClrD'):''}<button data-act="eClr" class="px-1 text-xs text-teal-700 hover:underline">${t('clrAll')}</button></div>`:'';
  const sorted=[...list].sort(SORT[S.es]||SORT.name),shown=sorted.slice(0,S.ep);
  const dash='<span class="text-slate-300">–</span>';
- const row=e=>`<tr class="border-t border-slate-100 hover:bg-slate-50/70"><td class="py-2.5 pl-4"><div class="flex items-center gap-3"><span class="grid h-8 w-8 flex-none place-items-center rounded-full bg-teal-50 text-sm font-medium text-teal-800">${esc(Array.from(String(e.name).trim())[0]||'?')}</span><div class="min-w-0"><div class="truncate text-sm font-medium text-slate-900">${esc(e.name)}</div><div class="text-xs text-slate-500">${esc(e.id)}<span class="sm:hidden">${e.branch||e.desig?', '+esc([e.branch,e.desig].filter(Boolean).join(', ')):''}</span></div></div></div></td>
+ const row=e=>`<tr data-act="viewEmp" data-id="${esc(e.id)}" class="cursor-pointer border-t border-slate-100 hover:bg-slate-50/70"><td class="py-2.5 pl-4"><div class="flex items-center gap-3"><span class="grid h-8 w-8 flex-none place-items-center rounded-full bg-teal-50 text-sm font-medium text-teal-800">${esc(Array.from(String(e.name).trim())[0]||'?')}</span><div class="min-w-0"><div class="truncate text-sm font-medium text-slate-900">${esc(e.name)}</div><div class="text-xs text-slate-500">${esc(e.id)}<span class="sm:hidden">${e.branch||e.desig?', '+esc([e.branch,e.desig].filter(Boolean).join(', ')):''}</span></div></div></div></td>
  <td class="hidden text-sm text-slate-700 sm:table-cell">${esc(e.branch)||dash}</td><td class="hidden text-sm text-slate-700 sm:table-cell">${esc(e.desig)||dash}</td>
  <td class="whitespace-nowrap text-right text-sm tabular-nums text-slate-900">${F(e.salary)}</td><td class="hidden whitespace-nowrap text-sm text-slate-600 lg:table-cell">${esc(e.phone)||dash}</td>
- <td class="whitespace-nowrap pr-3 text-right"><button data-act="editEmp" data-id="${esc(e.id)}" aria-label="${t('actEdit')}: ${esc(e.name)}" title="${t('actEdit')}" class="rounded-lg p-1.5 text-slate-500 hover:bg-slate-100 hover:text-teal-700">${ico('pencil')}</button><button data-act="delEmp" data-id="${esc(e.id)}" aria-label="${t('actDel')}: ${esc(e.name)}" title="${t('actDel')}" class="rounded-lg p-1.5 text-slate-500 hover:bg-red-50 hover:text-red-600">${ico('trash-2')}</button></td></tr>`;
+ <td class="whitespace-nowrap pr-3 text-right"><button data-act="viewEmp" data-id="${esc(e.id)}" aria-label="${t('actView')}: ${esc(e.name)}" title="${t('actView')}" class="rounded-lg p-1.5 text-slate-500 hover:bg-slate-100 hover:text-teal-700">${ico('eye')}</button><button data-act="editEmp" data-id="${esc(e.id)}" aria-label="${t('actEdit')}: ${esc(e.name)}" title="${t('actEdit')}" class="rounded-lg p-1.5 text-slate-500 hover:bg-slate-100 hover:text-teal-700">${ico('pencil')}</button><button data-act="delEmp" data-id="${esc(e.id)}" aria-label="${t('actDel')}: ${esc(e.name)}" title="${t('actDel')}" class="rounded-lg p-1.5 text-slate-500 hover:bg-red-50 hover:text-red-600">${ico('trash-2')}</button></td></tr>`;
  const th=(c,x)=>`<th class="pb-2 font-medium ${c}">${t(x)}</th>`;
  const dir=`<section class="rounded-xl border border-slate-200 bg-white"><div class="flex flex-wrap items-baseline justify-between gap-2 px-4 pb-3 pt-4"><h3 class="text-sm font-semibold text-slate-900">${t('dirT')}</h3><span class="text-xs text-slate-500">${bn?`${F(n)} জন দেখানো হচ্ছে`:`Showing ${F(n)} of ${F(tot)}`}</span></div>${chips}
  ${n?`<div class="overflow-x-auto"><table class="w-full text-left"><thead class="text-xs text-slate-500"><tr><th class="pb-2 pl-4 font-medium">${t('employee')}</th>${th('hidden sm:table-cell','fb')}${th('hidden sm:table-cell','fd')}${th('text-right','salary')}${th('hidden lg:table-cell','phone')}<th class="pb-2"></th></tr></thead><tbody>${shown.map(row).join('')}</tbody></table></div>
@@ -333,6 +335,35 @@ function empRefresh(){
  d.innerHTML=vEmpDyn();
  ['eb','ed','es'].forEach(k=>{const el=$('e-'+k);if(el)el.value=S[k]});
  lucide.createIcons();
+}
+ 
+function vEmpView(){
+ const e=S.emps.find(x=>x.id==S.view);if(!e)return '';
+ const mo=MRE.test(S.vm)?S.vm:S.month,s=cfg(mo),c=calc(e,mo),bn=S.lang=='bn';
+ const rs=S.recs.filter(r=>r.emp==e.id&&r.date.startsWith(mo)).sort((a,b)=>a.date.localeCompare(b.date));
+ const lvs=S.leaves.filter(v=>v.emp==e.id&&v.date.startsWith(mo)).sort((a,b)=>a.date.localeCompare(b.date));
+ const sum=k=>rs.reduce((a,r)=>a+(+r[k]||0),0),money=x=>'৳ '+F(Math.round(x));
+ const dash='<span class="text-slate-300">–</span>',wd=s.wd||1;
+ const fld=(l,v)=>`<div class="min-w-0"><dt class="text-xs text-slate-500">${l}</dt><dd class="mt-0.5 break-words text-sm font-medium text-slate-900">${v}</dd></div>`;
+ const tile=(l,v)=>`<div class="bg-white p-3"><dt class="text-xs text-slate-500">${l}</dt><dd class="mt-0.5 text-lg font-semibold tabular-nums text-slate-900">${v}</dd></div>`;
+ const line=(l,v,b)=>`<div class="flex items-baseline justify-between gap-3 ${b?'border-t border-slate-200 pt-2 font-medium text-slate-900':'text-slate-600'}"><dt class="text-sm">${l}</dt><dd class="whitespace-nowrap text-sm tabular-nums">${v}</dd></div>`;
+ const h4=x=>`<h4 class="mb-3 text-sm font-semibold text-slate-900">${x}</h4>`;
+ const info=`<section>${h4(t('pInfo'))}<dl class="grid grid-cols-2 gap-x-4 gap-y-4 sm:grid-cols-3">${fld(t('id'),esc(e.id))}${fld(t('name'),esc(e.name))}${fld(t('phone'),esc(e.phone)||dash)}${fld(t('branch'),esc(e.branch)||dash)}${fld(t('desig'),esc(e.desig)||dash)}${fld(t('salary'),money(e.salary))}${fld(t('pDaily'),money(e.salary/wd))}${fld(t('pMinR'),'৳ '+F(Math.round(c.rate*100)/100))}${fld(t('pEntAll'),F(S.recs.filter(r=>r.emp==e.id).length))}${fld(t('pLvAll'),F(S.leaves.filter(v=>v.emp==e.id).length))}</dl></section>`;
+ const head=`<div class="flex flex-wrap items-center justify-between gap-3">${h4(t('pMonthT')).replace('mb-3','mb-0')}<div class="flex items-center gap-2"><label class="text-sm text-slate-500" for="v-month">${t('month')}</label><input id="v-month" type="month" value="${esc(mo)}" class="${inp} !w-auto print:hidden"><span class="hidden text-sm font-medium text-slate-900 print:inline">${esc(mo)}</span></div></div><p class="mt-1 text-xs text-slate-500">${t('pOffice')}: ${esc(s.ti)} – ${esc(s.to)}, ${bn?t('pOffV')+' '+F(s.wd):F(s.wd)+' '+t('pOffV')}</p>`;
+ const hero=`<div class="mt-3 rounded-xl border border-slate-200 md:flex"><div class="p-5 md:w-64 md:flex-none"><div class="text-sm text-slate-500">${t('net')}</div><div class="mt-1 whitespace-nowrap text-4xl font-semibold leading-none tracking-tight text-slate-900">${money(c.net)}</div><div class="mt-3 text-xs text-slate-500">${esc(mo)}</div></div>
+ <dl class="flex-1 space-y-2 border-t border-slate-200 p-5 md:border-l md:border-t-0">${line(t('salary'),money(e.salary))}${line(t('dayDed'),money(c.dd))}${line(t('minDed'),money(c.md))}${line(t('lvDed'),money(c.vded))}${line(t('dedAll'),money(c.tot),1)}</dl></div>`;
+ const tiles=`<dl class="mt-3 grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-slate-200 bg-slate-200 sm:grid-cols-4">${tile(t('pEnt'),F(rs.length))}${tile(t('lateDays'),F(c.ld))}${tile(t('mLate'),F(sum('late')))}${tile(t('mEarly'),F(sum('early')))}${tile(t('mAbs'),F(sum('abs')))}${tile(t('pDedMin'),F(c.m))}${tile(t('mLv'),F(c.vd))}${tile(t('pLvDeduct'),F(c.vx))}</dl>`;
+ const bal=S.lc.map(k=>{const u=c.lv.used(k),q=+k.quota||0,over=q>0&&u>q;
+  return `<li class="py-2.5"><div class="flex flex-wrap items-center justify-between gap-2"><div class="flex flex-wrap items-center gap-2 text-sm text-slate-900">${esc(dn(k))}${pill(k.paid?'bg-teal-50 text-teal-800':'bg-slate-100 text-slate-700',t(k.paid?'lcPaid':'pUnpaid'))}<span class="text-xs text-slate-500">${t(k.per=='month'?'perMonth':'perYear')}</span></div><div class="text-sm tabular-nums text-slate-900">${F(u)}${q>0?' / '+F(q):` <span class="text-xs text-slate-500">${t('pNoLimit')}</span>`}</div></div>${q>0?`<div class="mt-1.5 h-1.5 rounded-sm bg-slate-100"><div class="h-1.5 rounded-r ${over?'bg-amber-500':'bg-teal-600'}" style="width:${Math.max(u?3:0,Math.min(100,u/q*100)).toFixed(1)}%"></div></div>`:''}</li>`}).join('');
+ const lvBox=`<section>${h4(t('lvBal'))}<ul class="divide-y divide-slate-100 rounded-xl border border-slate-200 px-4">${bal||`<li class="py-4 text-center text-sm text-slate-400">${t('noData')}</li>`}</ul>${lvs.length?`<div class="mt-3 text-xs text-slate-500">${t('pLvList')}</div><div class="mt-1.5 flex flex-wrap gap-1.5">${lvs.map(v=>pill('bg-sky-50 text-sky-900',esc(v.date)+', '+esc(lvName(v)))).join('')}</div>`:''}</section>`;
+ const er=rs.map(r=>`<tr class="border-t border-slate-100"><td class="whitespace-nowrap py-2 pl-4 pr-2 text-sm text-slate-700">${esc(r.date)}</td><td class="text-sm tabular-nums">${F(r.late)}</td><td class="text-sm tabular-nums">${F(r.early)}</td><td class="pr-4 text-sm tabular-nums">${F(r.abs)}</td></tr>`).join('');
+ const entBox=`<section>${h4(t('pEntT'))}${rs.length?`<div class="overflow-x-auto rounded-xl border border-slate-200"><table class="w-full text-left"><thead class="text-xs text-slate-500"><tr><th class="py-2 pl-4 pr-2 font-medium">${t('date')}</th><th class="font-medium">${t('lateMin')}</th><th class="font-medium">${t('earlyMin')}</th><th class="pr-4 font-medium">${t('absentMin')}</th></tr></thead><tbody>${er}</tbody></table></div>`:`<p class="rounded-xl border border-slate-200 px-4 py-6 text-center text-sm text-slate-400">${t('noData')}</p>`}</section>`;
+ return `<div data-modal data-view class="fixed inset-0 z-40 flex items-end justify-center sm:items-center sm:p-4 print:static print:block print:p-0" role="dialog" aria-modal="true" aria-label="${t('viewT')}: ${esc(e.name)}">
+ <div data-act="closeView" class="absolute inset-0 bg-slate-900/40 print:hidden"></div>
+ <div class="relative max-h-[92vh] w-full overflow-y-auto rounded-t-2xl bg-white shadow-xl sm:max-w-3xl sm:rounded-2xl print:max-h-none print:max-w-none print:overflow-visible print:rounded-none print:shadow-none">
+ <div class="sticky top-0 z-10 flex items-center gap-3 border-b border-slate-100 bg-white px-5 py-4 print:static"><span class="grid h-12 w-12 flex-none place-items-center rounded-full bg-teal-700 text-lg font-medium text-white">${ini(e)}</span><div class="min-w-0 flex-1"><h3 class="truncate text-lg font-semibold text-slate-900">${esc(e.name)}</h3><p class="truncate text-sm text-slate-500">${esc([e.id,e.desig,e.branch].filter(Boolean).join(', '))}</p></div>
+ <div class="flex flex-none items-center gap-1 print:hidden"><button data-act="viewEdit" class="${btn2} !px-3">${ico('pencil')}<span class="hidden sm:inline">${t('actEdit')}</span></button><button data-act="viewPrt" class="${btn2} !px-3">${ico('printer')}<span class="hidden sm:inline">${t('prt')}</span></button><button id="v-close" data-act="closeView" aria-label="${t('closeB')}" class="rounded-lg p-2 text-slate-500 hover:bg-slate-100">${ico('x')}</button></div></div>
+ <div class="space-y-6 p-5">${info}<section>${head}${hero}${tiles}</section>${lvBox}${entBox}<p class="hidden text-xs text-slate-500 print:block">${t('pDate')}: ${LD()}</p></div></div></div>`;
 }
  
 function vEmpForm(){
@@ -355,11 +386,13 @@ function vEmpForm(){
  
 function vEmp(){
  fixE();
+ if(S.view&&!S.emps.some(x=>x.id==S.view))S.view=null;
  const head=`<div class="mb-5 flex flex-wrap items-end justify-between gap-3"><div class="min-w-0"><h2 class="text-xl font-semibold text-slate-900">${t('empDash')}</h2><p class="mt-1 max-w-xl text-sm text-slate-500">${t('empSub')}</p></div>
  <div class="flex gap-2"><button data-act="togImp" class="${btn2}">${ico('clipboard-paste')}${t('imp')}</button><button data-act="newEmp" class="${btn}">${ico('plus')}${t('newEmp')}</button></div></div>`;
  const imp=S.imp?`<div class="${card} mb-5"><p class="mb-2 text-xs text-slate-500">${t('impHint')}</p><textarea id="imp-t" rows="6" class="${inp}" placeholder="E001   রহিম   25000   ঢাকা   ম্যানেজার   01700000000"></textarea><button data-act="doImp" class="${btn} mt-3">${ico('upload')}${t('impBtn')}</button></div>`:'';
  const empty=`<div class="rounded-2xl border border-dashed border-slate-300 bg-white px-6 py-16 text-center">${ico('users','mx-auto !h-8 !w-8 text-slate-400')}<h3 class="mt-3 text-base font-semibold text-slate-900">${t('emptyT')}</h3><p class="mx-auto mt-1 max-w-sm text-sm text-slate-500">${t('emptyS')}</p></div>`;
- return `${S.edit||S.add?vEmpForm():''}${head}${imp}${S.emps.length?empToolbar()+`<div id="emp-dyn" class="space-y-4">${vEmpDyn()}</div>`:empty}`;
+ const main=`${head}${imp}${S.emps.length?empToolbar()+`<div id="emp-dyn" class="space-y-4">${vEmpDyn()}</div>`:empty}`;
+ return `${S.edit||S.add?vEmpForm():''}${S.view?vEmpView()+`<div class="print:hidden">${main}</div>`:main}`;
 }
  
 /* ---------- Attendance entry dashboard ---------- */
@@ -648,6 +681,7 @@ function render(){
  <nav class="flex gap-1 overflow-x-auto mb-4 border-b border-slate-200 print:hidden">${tabs.map(([k,i])=>`<button data-act="tab" data-t="${k}" class="flex items-center gap-1.5 px-3 py-2 text-sm whitespace-nowrap border-b-2 -mb-px ${S.tab==k?'border-teal-700 text-teal-700 font-medium':'border-transparent text-slate-500 hover:text-slate-800'}">${ico(i)}${t(k)}</button>`).join('')}</nav>${body}`;
  lucide.createIcons();
  if(S.tab=='emp'&&(S.edit||S.add)){const f=$('f-id'),g=f&&f.readOnly?$('f-name'):f;if(g)g.focus()}
+ else if(S.tab=='emp'&&S.view){const b=$('v-close');if(b)b.focus()}
 }
  
 const dlFile=(name,txt,type)=>{
@@ -711,7 +745,7 @@ function restoreFile(f,cat='auto'){
  
 const val=i=>$(i).value.trim();
 const A={
- tab(d){S.tab=d.t;S.edit=null;S.add=false;render()},
+ tab(d){S.tab=d.t;S.edit=null;S.add=false;S.view=null;render()},
  lang(d){S.lang=d.v;save();render()},
  scope(d){S.scope=d.v;render()},
  rmCfg(){delete S.ms[S.month];save();render()},
@@ -739,7 +773,7 @@ const A={
   save();S.imp=false;render();
   alert(`${t('impAdd')}: ${F(a)}, ${t('impUpd')}: ${F(u)}, ${t('impSkip')}: ${F(k)}`);
  },
- editEmp(d){S.edit=d.id;S.add=false;render()},
+ editEmp(d){S.edit=d.id;S.add=false;S.view=null;render()},
  cancelEdit(){S.edit=null;S.add=false;render()},
  delEmp(d){if(!confirm(t('delQ')))return;S.emps=S.emps.filter(x=>x.id!=d.id);S.recs=S.recs.filter(x=>x.emp!=d.id);S.leaves=S.leaves.filter(x=>x.emp!=d.id);save();render()},
  saveRec(){
@@ -750,7 +784,11 @@ const A={
   S.selEmp=emp;S.selDate=date;S.month=date.slice(0,7);save();render();goRoster();
  },
  delRec(d){S.recs=S.recs.filter(x=>!(x.emp==d.emp&&x.date==d.date));save();render()},
- newEmp(){S.add=true;S.edit=null;render()},
+ newEmp(){S.add=true;S.edit=null;S.view=null;render()},
+ viewEmp(d){S.view=d.id;S.vm=MRE.test(S.month)?S.month:LD().slice(0,7);S.edit=null;S.add=false;render()},
+ closeView(){S.view=null;render()},
+ viewEdit(){S.edit=S.view;S.view=null;S.add=false;render()},
+ viewPrt(){window.print()},
  eBr(d){S.eb=S.eb==d.v?'':d.v;S.ep=50;empRefresh()},
  eDs(d){S.ed=S.ed==d.v?'':d.v;S.ep=50;empRefresh()},
  eClrQ(){S.eq='';S.ep=50;$('e-q').value='';empRefresh()},
@@ -858,6 +896,7 @@ document.addEventListener('change',e=>{
  else if(el.dataset.e!==undefined){S[el.dataset.e]=el.value;S.ep=50;empRefresh()}
  else if(el.dataset.n!==undefined){S[el.dataset.n]=el.value;S.nlp=S.nrp=50;entRefresh()}
  else if(el.id=='b-mode')S.bm=el.value;
+ else if(el.id=='v-month'){if(MRE.test(el.value)){S.vm=el.value;render();const m=$('v-month');if(m)m.focus()}}
  else if(el.id=='r-in'||el.id=='r-out')autoTime();
  else if(el.hasAttribute('data-month')&&el.value){S.month=el.value;S.nrp=50;if(S.tab=='entry'&&S.selDate.slice(0,7)!=S.month)S.selDate=S.month==LD().slice(0,7)?LD():S.month+'-01';render()}
  else if(el.id=='r-emp'){if(String(S.selEmp)!=String(el.value)){S.selEmp=el.value;resetForm()}entRefresh()}
@@ -876,6 +915,7 @@ document.addEventListener('input',e=>{if(e.target.id=='e-q'){S.eq=e.target.value
 document.addEventListener('toggle',e=>{if(e.target.id=='emx')S.emx=e.target.open},true);
 document.addEventListener('keydown',e=>{
  if(S.tab=='entry'&&e.key=='Enter'&&/^r-(in|out|late|early|abs)$/.test(e.target.id||'')){e.preventDefault();if(e.target.id=='r-in'||e.target.id=='r-out')autoTime();A.saveRec();return}
+ if(S.tab=='emp'&&S.view&&!S.edit&&!S.add){if(e.key=='Escape')A.closeView();return}
  if(!(S.tab=='emp'&&(S.edit||S.add)))return;
  if(e.key=='Escape')A.cancelEdit();
  else if(e.key=='Enter'&&e.target.tagName=='INPUT'&&e.target.closest('[data-modal]'))A.saveEmp();
