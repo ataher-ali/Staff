@@ -45,7 +45,15 @@ newEmp:'নতুন কর্মচারী',editEmpT:'কর্মচার�
 kStaff:'মোট কর্মচারী',kSal:'মাসিক মোট বেতন',kAvg:'গড় বেতন',kBr:'ব্রাঞ্চ',kDs:'পদবি',kBig:'সবচেয়ে বড়',kTop:'সবচেয়ে বেশি',unitP:'জন',
 brCard:'ব্রাঞ্চ অনুযায়ী বেতন ও কর্মচারী',dsCard:'পদবি অনুযায়ী কর্মচারী',colStaff:'কর্মচারী',colSal:'মাসিক বেতন',
 matT:'ব্রাঞ্চ ও পদবির ম্যাট্রিক্স',noDs:'পদবি নেই',dirT:'কর্মচারী তালিকা',
-qPh:'আইডি, নাম, ব্রাঞ্চ, পদবি বা ফোন',allBr:'সব ব্রাঞ্চ',allDs:'সব পদবি',
+qPh:'আইডি, নাম, ব্রাঞ্চ, পদবি বা ফোন',
+entT:'হাজিরা এন্ট্রি',entSub:'কর্মচারী খুঁজে নির্বাচন করুন, তারপর তারিখ ও সময় দিয়ে এন্ট্রি দিন। ব্রাঞ্চ বা পদবি দিয়ে তালিকা ছোট করা যায়।',
+kDayEnt:'নির্বাচিত তারিখে এন্ট্রি',kMDed:'এই মাসের কর্তন',kMAff:'এন্ট্রিভুক্ত কর্মচারী (মাস)',
+mLate:'মাসে লেট (মিনিট)',mEarly:'মাসে আগে ত্যাগ (মিনিট)',mAbs:'মাসে মাঝে অনুপস্থিত (মিনিট)',mLv:'মাসে ছুটি (দিন)',
+formT:'এন্ট্রি দিন',rosT:'কর্মচারী তালিকা',rosAs:'এই তারিখের অবস্থা',colDay:'এই তারিখে',colMon:'এই মাসে (মিনিট)',
+stAll:'সব',stEnt:'এন্ট্রি আছে',stNo:'এন্ট্রি নেই',stLv:'ছুটিতে',stMo:'মাসে এন্ট্রি আছে',
+stLate:'লেট',stEarly:'আগে ত্যাগ',stAbs:'অনুপস্থিত',stOk:'সময়মতো',minU:'মি.',sMin:'মিনিট অনুযায়ী (বেশি থেকে কম)',
+noteHas:'এই তারিখে এন্ট্রি আছে',noteRep:'সংরক্ষণ করলে নতুন মান দিয়ে বদলে যাবে।',loadRec:'ফর্মে আনুন',noteLv:'এই তারিখে ছুটি দেওয়া আছে',
+recT:'এন্ট্রি তালিকা',rngM:'পুরো মাস',rngD:'শুধু এই তারিখ',lvListT:'ছুটির তালিকা',allBr:'সব ব্রাঞ্চ',allDs:'সব পদবি',
 sName:'নাম অনুযায়ী',sId:'আইডি অনুযায়ী',sSal:'বেতন বেশি থেকে কম',sBr:'ব্রাঞ্চ অনুযায়ী',sDs:'পদবি অনুযায়ী',
 clrAll:'সব ফিল্টার মুছুন',more:'আরও দেখান',noRes:'কোনো কর্মচারী মেলেনি। খোঁজা শব্দ বা ফিল্টার বদলে দেখুন।',
 emptyT:'এখনও কোনো কর্মচারী নেই',emptyS:'প্রথম কর্মচারী যোগ করুন, অথবা Excel থেকে একসাথে ইমপোর্ট করুন।',
@@ -91,7 +99,15 @@ newEmp:'New employee',editEmpT:'Edit employee',
 kStaff:'Total staff',kSal:'Total monthly salary',kAvg:'Average salary',kBr:'Branches',kDs:'Designations',kBig:'Largest',kTop:'Most staff',unitP:'staff',
 brCard:'Salary and staff by branch',dsCard:'Staff by designation',colStaff:'Staff',colSal:'Monthly salary',
 matT:'Branch and designation matrix',noDs:'No designation',dirT:'Staff directory',
-qPh:'ID, name, branch, designation, phone',allBr:'All branches',allDs:'All designations',
+qPh:'ID, name, branch, designation, phone',
+entT:'Attendance entry',entSub:'Find an employee, pick the date and record the times. Narrow the list by branch or designation.',
+kDayEnt:'Entries on the selected date',kMDed:'Deduction this month',kMAff:'Staff with entries (month)',
+mLate:'Late this month (min)',mEarly:'Early leave this month (min)',mAbs:'Absent in-between this month (min)',mLv:'Leave this month (days)',
+formT:'New entry',rosT:'Staff list',rosAs:'Status on',colDay:'On this date',colMon:'This month (min)',
+stAll:'All',stEnt:'Has entry',stNo:'No entry',stLv:'On leave',stMo:'Entries this month',
+stLate:'Late',stEarly:'Early',stAbs:'Away',stOk:'On time',minU:'min',sMin:'Sort by minutes (high to low)',
+noteHas:'An entry already exists for this date',noteRep:'Saving replaces it.',loadRec:'Load into form',noteLv:'Leave is recorded for this date',
+recT:'Entries',rngM:'Whole month',rngD:'This date only',lvListT:'Leave entries',allBr:'All branches',allDs:'All designations',
 sName:'Sort by name',sId:'Sort by ID',sSal:'Salary, high to low',sBr:'Sort by branch',sDs:'Sort by designation',
 clrAll:'Clear all filters',more:'Show more',noRes:'No employees match. Change the search or filters.',
 emptyT:'No employees yet',emptyS:'Add the first employee, or import many at once from Excel.',
@@ -116,7 +132,7 @@ fb:'Branch',fd:'Designation',fAll:'All',brSum:'Branch-wise totals',noBr:'No bran
 csv:'Download CSV',prt:'Print / PDF',stmt:'Monthly Salary Deduction Statement',sgPrep:'Prepared by',sgCheck:'Checked by',sgAppr:'Approved by',pDate:'Prepared on'}
 };
 const LD=()=>{const d=new Date();return new Date(d.getTime()-d.getTimezoneOffset()*6e4).toISOString().slice(0,10)};
-const D={lang:'bn',tab:'emp',month:LD().slice(0,7),edit:null,selEmp:'',selDate:LD(),scope:'def',lvEmp:'',lvCat:'',lvFrom:LD(),lvTo:LD(),fb:'',fd:'',bm:'time',eq:'',eb:'',ed:'',es:'name',ep:50,add:false,emx:false,
+const D={lang:'bn',tab:'emp',month:LD().slice(0,7),edit:null,selEmp:'',selDate:LD(),scope:'def',lvEmp:'',lvCat:'',lvFrom:LD(),lvTo:LD(),fb:'',fd:'',bm:'time',eq:'',eb:'',ed:'',es:'name',ep:50,add:false,emx:false,nq:'',nb:'',nd:'',ns:'all',nso:'name',nrg:'month',nlp:50,nrp:50,
 s:{ld:{on:true,days:3,deduct:1,rep:true,skip:true},wd:26,wh:8,late:true,early:true,absent:true,grace:0,ti:'09:00',to:'17:00'},ms:{},emps:[],recs:[],leaves:[],
 lc:[{id:'cl',paid:true,quota:10,per:'year'},{id:'sl',paid:true,quota:14,per:'year'},{id:'ul',paid:false,quota:0,per:'month'}]};
 const clone=o=>JSON.parse(JSON.stringify(o));
@@ -346,41 +362,183 @@ function vEmp(){
  return `${S.edit||S.add?vEmpForm():''}${head}${imp}${S.emps.length?empToolbar()+`<div id="emp-dyn" class="space-y-4">${vEmpDyn()}</div>`:empty}`;
 }
  
+/* ---------- Attendance entry dashboard ---------- */
+const fixN=()=>{if(S.nb&&!S.emps.some(e=>kb(e)==S.nb))S.nb='';if(S.nd&&!S.emps.some(e=>kd(e)==S.nd))S.nd='';if(!['all','ent','no','lv','mo'].includes(S.ns))S.ns='all'};
+const ini=e=>esc(Array.from(String(e.name).trim())[0]||'?');
+function nData(){
+ const mo=S.month,dt=S.selDate,rm=new Map(),rd=new Map(),lm=new Map(),ld=new Map();
+ S.recs.forEach(r=>{const k=String(r.emp);
+  if(r.date.startsWith(mo)){const a=rm.get(k)||{n:0,late:0,early:0,abs:0};a.n++;a.late+=+r.late||0;a.early+=+r.early||0;a.abs+=+r.abs||0;rm.set(k,a)}
+  if(r.date==dt)rd.set(k,r)});
+ S.leaves.forEach(v=>{const k=String(v.emp);if(v.date.startsWith(mo))lm.set(k,(lm.get(k)||0)+1);if(v.date==dt)ld.set(k,v)});
+ return{rm,rd,lm,ld};
+}
+function nBase(){
+ const q=bdn(S.nq).trim().toLowerCase();
+ return S.emps.filter(e=>(!S.nb||kb(e)==S.nb)&&(!S.nd||kd(e)==S.nd)&&(!q||hay(e).includes(q)));
+}
+const nHas=(e,Dd,st)=>{const k=String(e.id);return st=='ent'?Dd.rd.has(k):st=='no'?!Dd.rd.has(k)&&!Dd.ld.has(k):st=='lv'?Dd.ld.has(k):st=='mo'?Dd.rm.has(k):true};
+const nMin=(Dd,e)=>{const a=Dd.rm.get(String(e.id));return a?a.late+a.early+a.abs:0};
+const nTxt=r=>[['stLate',r.late],['stEarly',r.early],['stAbs',r.abs]].filter(x=>x[1]>0).map(x=>`${t(x[0])} ${F(x[1])}`).join(', ');
+const pill=(c,x)=>`<span class="inline-block rounded-md px-2 py-0.5 text-xs ${c}">${x}</span>`;
+const lvName=v=>{const c=S.lc.find(z=>z.id==v.cat);return c?dn(c):t('leave')};
+function nStat(e,Dd){
+ const k=String(e.id),r=Dd.rd.get(k),v=Dd.ld.get(k),o=[];
+ if(r){const x=nTxt(r);o.push(x?pill('bg-amber-50 text-amber-900',x+' '+t('minU')):pill('bg-teal-50 text-teal-800',t('stOk')))}
+ if(v)o.push(pill('bg-sky-50 text-sky-900',esc(lvName(v))));
+ return o.length?`<div class="flex flex-wrap gap-1">${o.join('')}</div>`:'<span class="text-slate-300">–</span>';
+}
+ 
+function nToolbar(){
+ const gb=grp(S.emps,kb).sort((a,b)=>last(a.k,b.k)||a.k.localeCompare(b.k)),gd=grp(S.emps,kd).sort((a,b)=>last(a.k,b.k)||a.k.localeCompare(b.k));
+ const op=(gs,cur,all,f)=>`<option value="">${t(all)}</option>`+gs.map(g=>`<option value="${esc(g.k)}" ${g.k==cur?'selected':''}>${esc(kl(g.k,f))} (${F(g.n)})</option>`).join('');
+ const so=(v,l)=>`<option value="${v}" ${S.nso==v?'selected':''}>${t(l)}</option>`;
+ return `<div class="mb-4 flex flex-wrap items-center gap-2">
+ <label class="relative min-w-[15rem] flex-1"><span class="sr-only">${t('search')}</span>${ico('search','pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-slate-400')}<input id="n-q" type="search" value="${esc(S.nq)}" placeholder="${t('qPh')}" autocomplete="off" class="${inp} !pl-9"></label>
+ <select id="n-nb" data-n="nb" aria-label="${t('fb')}" class="${inp} !w-auto">${op(gb,S.nb,'allBr','noBr')}</select>
+ <select id="n-nd" data-n="nd" aria-label="${t('fd')}" class="${inp} !w-auto">${op(gd,S.nd,'allDs','noDs')}</select>
+ <select id="n-nso" data-n="nso" aria-label="${t('rosT')}" class="${inp} !w-auto">${so('name','sName')}${so('id','sId')}${so('min','sMin')}${so('branch','sBr')}</select></div>`;
+}
+ 
+function nKpi(Dd){
+ const L=nBase(),n=L.length,bn=S.lang=='bn';
+ let late=0,early=0,abs=0,aff=0,lv=0,ded=0,day=0,dlv=0;
+ L.forEach(e=>{const k=String(e.id),a=Dd.rm.get(k);
+  if(a){late+=a.late;early+=a.early;abs+=a.abs;aff++}
+  lv+=Dd.lm.get(k)||0;
+  if(Dd.rd.has(k))day++;
+  if(Dd.ld.has(k))dlv++;
+  if(a||Dd.lm.has(k))ded+=calc(e).tot});
+ const cell=(l,v,sub)=>`<div class="bg-white p-5"><dt class="text-sm text-slate-500">${l}</dt><dd class="mt-1 whitespace-nowrap text-2xl font-semibold text-slate-900">${v}</dd>${sub?`<dd class="mt-1 text-xs text-slate-500">${sub}</dd>`:''}</div>`;
+ return `<section class="overflow-hidden rounded-2xl border border-slate-200 bg-white md:flex">
+ <div class="p-6 md:w-64 md:flex-none"><div class="text-sm text-slate-500">${t('kDayEnt')}</div><div class="mt-1 text-6xl font-semibold leading-none tracking-tight text-slate-900">${F(day)}</div><div class="mt-3 text-xs text-slate-500">${esc(S.selDate)}</div><div class="mt-0.5 text-xs text-slate-500">${bn?`মোট ${F(n)} জনের মধ্যে, ছুটিতে ${F(dlv)} জন`:`of ${F(n)} staff, ${F(dlv)} on leave`}</div></div>
+ <dl class="grid flex-1 grid-cols-2 gap-px border-t border-slate-200 bg-slate-200 md:grid-cols-3 md:border-l md:border-t-0">
+ ${cell(t('kMDed'),'৳ '+F(Math.round(ded)),esc(S.month))}${cell(t('kMAff'),F(aff),bn?`মোট ${F(n)} জনের মধ্যে`:`of ${F(n)} staff`)}${cell(t('mLate'),F(late))}${cell(t('mEarly'),F(early))}${cell(t('mAbs'),F(abs))}${cell(t('mLv'),F(lv))}</dl></section>`;
+}
+ 
+function nRoster(Dd){
+ const base=nBase(),bn=S.lang=='bn',list=base.filter(e=>nHas(e,Dd,S.ns));
+ const so={name:SORT.name,id:SORT.id,branch:SORT.branch,min:(a,b)=>nMin(Dd,b)-nMin(Dd,a)||SORT.name(a,b)}[S.nso]||SORT.name;
+ const shown=[...list].sort(so).slice(0,S.nlp),mx=Math.max(1,...list.map(e=>nMin(Dd,e)));
+ const stc=[['all','stAll'],['ent','stEnt'],['no','stNo'],['lv','stLv'],['mo','stMo']].map(([v,l])=>{const p=S.ns==v;return `<button data-act="nSt" data-v="${v}" aria-pressed="${p}" class="rounded-full border px-3 py-1 text-xs ${p?'border-teal-700 bg-teal-700 text-white':'border-slate-200 text-slate-700 hover:bg-slate-50'}">${t(l)} <span class="tabular-nums ${p?'text-teal-100':'text-slate-500'}">${F(base.filter(e=>nHas(e,Dd,v)).length)}</span></button>`}).join('');
+ const chip=(x,a)=>`<button data-act="${a}" aria-label="${t('rmF')}: ${esc(x)}" class="inline-flex items-center gap-1 rounded-full bg-slate-100 py-1 pl-3 pr-2 text-xs text-slate-700 hover:bg-slate-200">${esc(x)}${ico('x')}</button>`;
+ const chips=(S.nq||S.nb||S.nd||S.ns!='all')?`<div class="mt-3 flex flex-wrap items-center gap-2">${S.nq?chip('"'+S.nq+'"','nClrQ'):''}${S.nb?chip(kl(S.nb,'noBr'),'nClrB'):''}${S.nd?chip(kl(S.nd,'noDs'),'nClrD'):''}<button data-act="nClr" class="px-1 text-xs text-teal-700 hover:underline">${t('clrAll')}</button></div>`:'';
+ const row=e=>{const k=String(e.id),sel=e.id==S.selEmp,m=nMin(Dd,e),a=Dd.rm.get(k),meta=[e.branch,e.desig].filter(Boolean).join(', ');
+  const tip=a?`${t('stLate')} ${F(a.late)}, ${t('stEarly')} ${F(a.early)}, ${t('stAbs')} ${F(a.abs)}`:'';
+  return `<tr data-act="nPick" data-id="${esc(e.id)}" class="cursor-pointer border-t border-slate-100 ${sel?'bg-teal-50':'hover:bg-slate-50/70'}">
+  <td class="py-2.5 pl-4"><div class="flex items-center gap-3"><span class="grid h-8 w-8 flex-none place-items-center rounded-full text-sm font-medium ${sel?'bg-teal-700 text-white':'bg-teal-50 text-teal-800'}">${ini(e)}</span><div class="min-w-0"><div class="truncate text-sm font-medium text-slate-900">${esc(e.name)}</div><div class="truncate text-xs text-slate-500">${esc(e.id)}${meta?', '+esc(meta):''}</div></div></div></td>
+  <td class="py-2.5 pr-2">${nStat(e,Dd)}</td>
+  <td class="hidden w-32 py-2.5 pr-4 sm:table-cell" ${tip?`title="${esc(tip)}"`:''}>${m?`<div class="text-sm tabular-nums text-slate-700">${F(m)}</div><div class="mt-1 h-1.5 rounded-sm bg-slate-100"><div class="h-1.5 rounded-r bg-teal-600" style="width:${Math.max(3,m/mx*100).toFixed(1)}%"></div></div>`:'<span class="text-slate-300">–</span>'}</td>
+  <td class="whitespace-nowrap pr-3 text-right"><button data-act="nPick" data-id="${esc(e.id)}" aria-pressed="${sel}" aria-label="${t('formT')}: ${esc(e.name)}" title="${t('formT')}" class="rounded-lg p-1.5 hover:bg-white hover:text-teal-700 ${sel?'text-teal-700':'text-slate-500'}">${ico('square-pen')}</button></td></tr>`};
+ const body=list.length?`<div class="overflow-x-auto"><table class="w-full text-left"><thead class="text-xs text-slate-500"><tr><th class="pb-2 pl-4 font-medium">${t('employee')}</th><th class="pb-2 font-medium">${t('colDay')}</th><th class="hidden pb-2 pr-4 font-medium sm:table-cell">${t('colMon')}</th><th class="pb-2"></th></tr></thead><tbody>${shown.map(row).join('')}</tbody></table></div>
+ ${list.length>shown.length?`<div class="border-t border-slate-100 p-3 text-center"><button data-act="nMore" class="${btn2}">${t('more')} (${F(list.length-shown.length)})</button></div>`:''}`:`<p class="border-t border-slate-100 px-4 py-10 text-center text-sm text-slate-500">${t('noRes')}</p>`;
+ return `<div class="px-4 pb-3 pt-4"><div class="flex flex-wrap items-baseline justify-between gap-2"><h3 class="text-sm font-semibold text-slate-900">${t('rosT')}</h3><span class="text-xs text-slate-500">${bn?`${F(list.length)} জন দেখানো হচ্ছে`:`Showing ${F(list.length)} of ${F(S.emps.length)}`}</span></div>
+ <p class="mt-0.5 text-xs text-slate-500">${t('rosAs')}: ${esc(S.selDate)}</p><div class="mt-3 flex flex-wrap gap-2">${stc}</div>${chips}</div>${body}`;
+}
+ 
+function nSel(Dd){
+ const e=S.emps.find(x=>x.id==S.selEmp);if(!e)return '';
+ const c=calc(e),k=String(e.id),r=Dd.rd.get(k),v=Dd.ld.get(k);
+ const st=(l,x)=>`<div><dt class="text-xs text-slate-500">${l}</dt><dd class="mt-0.5 text-base font-semibold tabular-nums text-slate-900">${x}</dd></div>`;
+ const note=(r?`<div class="mb-3 rounded-lg bg-amber-50 px-3 py-2 text-xs text-amber-900"><div class="flex items-start gap-2">${ico('info','mt-0.5 flex-none')}<span>${t('noteHas')}${nTxt(r)?': '+nTxt(r)+' '+t('minU'):''}</span></div><div class="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 pl-6"><span>${t('noteRep')}</span><button data-act="loadRec" class="text-teal-700 underline">${t('loadRec')}</button></div></div>`:'')
+  +(v?`<p class="mb-3 flex items-center gap-2 rounded-lg bg-sky-50 px-3 py-2 text-xs text-sky-900">${ico('calendar-days','flex-none')}<span>${t('noteLv')}: ${esc(lvName(v))}</span></p>`:'');
+ return `<div class="mb-4 rounded-lg bg-slate-50 p-3"><div class="flex items-center gap-3"><span class="grid h-10 w-10 flex-none place-items-center rounded-full bg-teal-700 text-base font-medium text-white">${ini(e)}</span><div class="min-w-0"><div class="truncate text-sm font-semibold text-slate-900">${esc(e.name)}</div><div class="truncate text-xs text-slate-500">${esc([e.id,e.branch,e.desig].filter(Boolean).join(', '))}</div></div></div>
+ <div class="mt-3 border-t border-slate-200 pt-2 text-xs text-slate-500">${t('month')}: ${esc(S.month)}</div>
+ <dl class="mt-1 grid grid-cols-3 gap-3">${st(t('lateDays'),F(c.ld))}${st(t('minutes'),F(c.m))}${st(t('dedAll'),'৳ '+F(Math.round(c.tot)))}</dl></div>${note}`;
+}
+ 
+function nRecs(){
+ const ids=new Set(nBase().map(e=>String(e.id))),by=new Map(S.emps.map(e=>[String(e.id),e])),bn=S.lang=='bn';
+ const nm=k=>(by.get(String(k))||{}).name||k;
+ const rs=S.recs.filter(r=>r.date.startsWith(S.month)&&ids.has(String(r.emp))&&(S.nrg!='day'||r.date==S.selDate)).sort((a,b)=>b.date.localeCompare(a.date)||String(nm(a.emp)).localeCompare(String(nm(b.emp))));
+ const shown=rs.slice(0,S.nrp);
+ const seg=(v,l)=>`<button data-act="nRng" data-v="${v}" aria-pressed="${S.nrg==v}" class="px-3 py-1 text-xs ${S.nrg==v?'bg-teal-700 text-white':'text-slate-700 hover:bg-slate-50'}">${t(l)}</button>`;
+ const row=x=>{const e=by.get(String(x.emp));return `<tr class="border-t border-slate-100 hover:bg-slate-50/70"><td class="whitespace-nowrap py-2.5 pl-4 pr-2 text-sm text-slate-700">${x.date}</td><td class="py-2.5 pr-2"><div class="text-sm font-medium text-slate-900">${esc(nm(x.emp))}</div><div class="text-xs text-slate-500">${esc(x.emp)}${e&&e.branch?', '+esc(e.branch):''}</div></td><td class="text-sm tabular-nums">${F(x.late)}</td><td class="text-sm tabular-nums">${F(x.early)}</td><td class="text-sm tabular-nums">${F(x.abs)}</td><td class="whitespace-nowrap pr-3 text-right"><button data-act="nEdit" data-emp="${esc(x.emp)}" data-date="${x.date}" aria-label="${t('actEdit')}: ${esc(nm(x.emp))} ${x.date}" title="${t('actEdit')}" class="rounded-lg p-1.5 text-slate-500 hover:bg-slate-100 hover:text-teal-700">${ico('pencil')}</button><button data-act="delRec" data-emp="${esc(x.emp)}" data-date="${x.date}" aria-label="${t('actDel')}: ${esc(nm(x.emp))} ${x.date}" title="${t('actDel')}" class="rounded-lg p-1.5 text-slate-500 hover:bg-red-50 hover:text-red-600">${ico('trash-2')}</button></td></tr>`};
+ const th=(k,c='')=>`<th class="pb-2 font-medium ${c}">${t(k)}</th>`;
+ return `<div class="flex flex-wrap items-center justify-between gap-2 px-4 pb-3 pt-4"><div class="flex items-baseline gap-2"><h3 class="text-sm font-semibold text-slate-900">${t('recT')}</h3><span class="text-xs text-slate-500">${esc(S.month)}${bn?`, ${F(rs.length)} টি`:`, ${F(rs.length)}`}</span></div><div class="inline-flex overflow-hidden rounded-lg border border-slate-200">${seg('month','rngM')}${seg('day','rngD')}</div></div>
+ ${rs.length?`<div class="overflow-x-auto"><table class="w-full text-left"><thead class="text-xs text-slate-500"><tr><th class="pb-2 pl-4 font-medium">${t('date')}</th>${th('employee')}${th('lateMin')}${th('earlyMin')}${th('absentMin')}<th class="pb-2"></th></tr></thead><tbody>${shown.map(row).join('')}</tbody></table></div>
+ ${rs.length>shown.length?`<div class="border-t border-slate-100 p-3 text-center"><button data-act="nMoreR" class="${btn2}">${t('more')} (${F(rs.length-shown.length)})</button></div>`:''}`:`<p class="border-t border-slate-100 px-4 py-8 text-center text-sm text-slate-400">${t('noData')}</p>`}`;
+}
+ 
 function vEntry(){
  if(!S.emps.length)return `<p class="${card} text-sm text-slate-500 text-center">${t('errEmp')}</p>`;
  if(!S.emps.some(x=>x.id==S.selEmp))S.selEmp=S.emps[0].id;
+ fixN();
+ const Dd=nData(),c=cfg(S.selDate.slice(0,7));
  const opts=S.emps.map(x=>`<option value="${esc(x.id)}" ${x.id==S.selEmp?'selected':''}>${esc(x.id)} - ${esc(x.name)}</option>`).join('');
- const rs=S.recs.filter(x=>x.date.startsWith(S.month)).sort((a,b)=>b.date.localeCompare(a.date));
- const nm=id=>(S.emps.find(x=>x.id==id)||{}).name||id;
  const num=(i,l)=>`<div>${lbl(l,`<input id="${i}" type="number" min="0" value="0" class="${inp}">`)}</div>`;
- return `<div class="${card} grid grid-cols-2 gap-3">
- <div>${lbl(t('employee'),`<select id="r-emp" class="${inp}">${opts}</select>`)}</div>
- <div>${lbl(t('date'),`<input id="r-date" type="date" value="${S.selDate}" class="${inp}">`)}</div>
+ const head=`<div class="mb-5 flex flex-wrap items-end justify-between gap-3"><div class="min-w-0"><h2 class="text-xl font-semibold text-slate-900">${t('entT')}</h2><p class="mt-1 max-w-xl text-sm text-slate-500">${t('entSub')}</p></div>
+ <div class="flex items-center gap-2"><span class="text-sm text-slate-500">${t('month')}</span><input id="n-month" type="month" data-month value="${S.month}" class="${inp} !w-auto"><span id="n-badge">${S.ms[S.month]?badge():''}</span></div></div>`;
+ return `${head}${nToolbar()}<div id="n-kpi" class="mb-4">${nKpi(Dd)}</div>
+ <div class="grid items-start gap-4 lg:grid-cols-5">
+ <section id="n-ros" class="rounded-xl border border-slate-200 bg-white lg:col-span-3">${nRoster(Dd)}</section>
+ <section id="n-form" class="rounded-xl border border-slate-200 bg-white p-4 lg:sticky lg:top-4 lg:col-span-2"><h3 class="mb-3 text-sm font-semibold text-slate-900">${t('formT')}</h3><div id="n-sel">${nSel(Dd)}</div>
+ <div class="grid grid-cols-2 gap-3">
+ <div class="col-span-2">${lbl(t('employee'),`<select id="r-emp" class="${inp}">${opts}</select>`)}</div>
+ <div class="col-span-2">${lbl(t('date'),`<input id="r-date" type="date" value="${S.selDate}" class="${inp}">`)}</div>
  <div>${lbl(t('inT'),`<input id="r-in" type="time" class="${inp}">`)}</div><div>${lbl(t('outT'),`<input id="r-out" type="time" class="${inp}">`)}</div>
- <p class="col-span-2 text-xs text-slate-400 -mt-1">${t('otHintE')}: ${esc(cfg(S.selDate.slice(0,7)).ti)} – ${esc(cfg(S.selDate.slice(0,7)).to)}</p>
+ <p id="n-hint" class="col-span-2 -mt-1 text-xs text-slate-400">${t('otHintE')}: ${esc(c.ti)} – ${esc(c.to)}</p>
  ${num('r-late',t('lateMin'))}${num('r-early',t('earlyMin'))}${num('r-abs',t('absentMin'))}
- <div class="flex items-end"><button data-act="saveRec" class="${btn} w-full justify-center">${ico('check')}${t('save')}</button></div></div>
- <div class="mt-4 flex items-center gap-2"><span class="text-sm text-slate-500">${t('month')}</span><input type="month" data-month value="${S.month}" class="${inp} !w-auto"></div>
- <div class="${card} mt-2 overflow-x-auto">${rs.length?`<table class="w-full text-sm"><thead class="text-xs text-slate-500 text-left"><tr><th class="pb-2 font-medium">${t('date')}</th><th class="pb-2 font-medium">${t('employee')}</th><th class="pb-2 font-medium">${t('lateMin')}</th><th class="pb-2 font-medium">${t('earlyMin')}</th><th class="pb-2 font-medium">${t('absentMin')}</th><th></th></tr></thead><tbody>${rs.map(x=>`<tr class="border-t border-slate-100"><td class="py-2 pr-2">${x.date}</td><td class="pr-2">${esc(nm(x.emp))}</td><td>${F(x.late)}</td><td>${F(x.early)}</td><td>${F(x.abs)}</td><td class="text-right"><button data-act="delRec" data-emp="${esc(x.emp)}" data-date="${x.date}" class="p-1.5 text-slate-500 hover:text-red-600">${ico('trash-2')}</button></td></tr>`).join('')}</tbody></table>`:`<p class="text-sm text-slate-400 text-center py-4">${t('noData')}</p>`}</div>${vLeave()}`;
+ <div class="flex items-end"><button data-act="saveRec" class="${btn} w-full justify-center">${ico('check')}${t('save')}</button></div></div></section>
+</div>
+ <section id="n-recs" class="mt-4 rounded-xl border border-slate-200 bg-white">${nRecs()}</section>${vLeave()}`;
+}
+ 
+function entRefresh(){
+ if(!$('n-kpi'))return;
+ const Dd=nData(),h=$('n-hint'),c=cfg(S.selDate.slice(0,7));
+ $('n-kpi').innerHTML=nKpi(Dd);$('n-ros').innerHTML=nRoster(Dd);$('n-sel').innerHTML=nSel(Dd);$('n-recs').innerHTML=nRecs();
+ const lv=$('n-lvl');if(lv)lv.innerHTML=vLeaveList();
+ ['nb','nd','nso'].forEach(k=>{const el=$('n-'+k);if(el)el.value=S[k]});
+ const r=$('r-emp');if(r)r.value=S.selEmp;
+ const d=$('r-date');if(d&&d.value!=S.selDate)d.value=S.selDate;
+ const m=$('n-month');if(m)m.value=S.month;
+ const b=$('n-badge');if(b)b.innerHTML=S.ms[S.month]?badge():'';
+ if(h)h.textContent=`${t('otHintE')}: ${c.ti} – ${c.to}`;
+ lucide.createIcons();
+}
+function resetForm(){['r-in','r-out'].forEach(i=>{const el=$(i);if(el)el.value=''});['r-late','r-early','r-abs'].forEach(i=>{const el=$(i);if(el)el.value=0})}
+function fillRec(emp,date){
+ const r=S.recs.find(x=>String(x.emp)==String(emp)&&x.date==date);if(!r)return;
+ $('r-in').value='';$('r-out').value='';$('r-late').value=r.late;$('r-early').value=r.early;$('r-abs').value=r.abs;
+}
+function goRoster(){
+ const r=$('n-ros');if(S.tab!='entry'||!r||!r.scrollIntoView)return;
+ if(window.matchMedia&&window.matchMedia('(min-width:1024px)').matches)return;
+ const rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ r.scrollIntoView({behavior:rm?'auto':'smooth',block:'start'});
+}
+function goForm(){
+ const f=$('n-form');if(!f)return;
+ const wide=window.matchMedia&&window.matchMedia('(min-width:1024px)').matches;
+ if(wide){const i=$('r-in');if(i)i.focus()}
+ else if(f.scrollIntoView){const rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;f.scrollIntoView({behavior:rm?'auto':'smooth',block:'start'})}
+}
+ 
+function vLeaveList(){
+ const ids=new Set(nBase().map(e=>String(e.id))),by=new Map(S.emps.map(e=>[String(e.id),e]));
+ const nm=id=>(by.get(String(id))||{}).name||id;
+ const cn=id=>{const c=S.lc.find(k=>k.id==id);return c?dn(c):'—'};
+ const ls=S.leaves.filter(x=>x.date.startsWith(S.month)&&ids.has(String(x.emp))).sort((a,b)=>b.date.localeCompare(a.date)||String(a.emp).localeCompare(String(b.emp)));
+ return `<div class="flex items-baseline justify-between px-4 pb-3 pt-4"><h3 class="text-sm font-semibold text-slate-900">${t('lvListT')}</h3><span class="text-xs text-slate-500">${esc(S.month)}, ${F(ls.length)}</span></div>
+ ${ls.length?`<div class="overflow-x-auto"><table class="w-full text-left text-sm"><thead class="text-xs text-slate-500"><tr><th class="pb-2 pl-4 font-medium">${t('date')}</th><th class="pb-2 font-medium">${t('employee')}</th><th class="pb-2 font-medium">${t('lvCat')}</th><th class="pb-2"></th></tr></thead><tbody>${ls.map(x=>`<tr class="border-t border-slate-100 hover:bg-slate-50/70"><td class="whitespace-nowrap py-2.5 pl-4 pr-2">${x.date}</td><td class="pr-2">${esc(nm(x.emp))}</td><td class="pr-2">${esc(cn(x.cat))}</td><td class="whitespace-nowrap pr-3 text-right"><button data-act="delLv" data-emp="${esc(x.emp)}" data-date="${x.date}" aria-label="${t('actDel')}: ${esc(nm(x.emp))} ${x.date}" title="${t('actDel')}" class="rounded-lg p-1.5 text-slate-500 hover:bg-red-50 hover:text-red-600">${ico('trash-2')}</button></td></tr>`).join('')}</tbody></table></div>`:`<p class="border-t border-slate-100 px-4 py-8 text-center text-sm text-slate-400">${t('noData')}</p>`}`;
 }
  
 function vLeave(){
  if(!S.lc.length)return `<div class="${card} mt-6 text-sm text-slate-500 text-center">${t('lvNoCat')}</div>`;
- const nm=id=>(S.emps.find(x=>x.id==id)||{}).name||id;
- const cn=id=>{const c=S.lc.find(k=>k.id==id);return c?dn(c):'—'};
  if(!S.lc.some(c=>c.id==S.lvCat))S.lvCat=S.lc[0].id;
  if(!S.emps.some(x=>x.id==S.lvEmp))S.lvEmp=S.emps.some(x=>x.id==S.selEmp)?S.selEmp:S.emps[0].id;
  const eo=S.emps.map(x=>`<option value="${esc(x.id)}" ${x.id==S.lvEmp?'selected':''}>${esc(x.id)} - ${esc(x.name)}</option>`).join('');
  const co=S.lc.map(c=>`<option value="${esc(c.id)}" ${c.id==S.lvCat?'selected':''}>${esc(dn(c))}</option>`).join('');
- const ls=S.leaves.filter(x=>x.date.startsWith(S.month)).sort((a,b)=>b.date.localeCompare(a.date)||String(a.emp).localeCompare(String(b.emp)));
- return `<h2 class="mt-8 mb-2 text-sm font-medium text-slate-700 flex items-center gap-2">${ico('calendar-days')}${t('leave')}</h2>
- <div class="${card} grid grid-cols-2 gap-3">
- <div>${lbl(t('employee'),`<select id="l-emp" class="${inp}">${eo}</select>`)}</div>
- <div>${lbl(t('lvCat'),`<select id="l-cat" class="${inp}">${co}</select>`)}</div>
+ return `<h2 class="mb-2 mt-8 flex items-center gap-2 text-sm font-medium text-slate-700">${ico('calendar-days')}${t('leave')}</h2>
+ <div class="grid items-start gap-4 lg:grid-cols-5">
+ <div class="${card} grid grid-cols-2 gap-3 lg:col-span-2">
+ <div class="col-span-2">${lbl(t('employee'),`<select id="l-emp" class="${inp}">${eo}</select>`)}</div>
+ <div class="col-span-2">${lbl(t('lvCat'),`<select id="l-cat" class="${inp}">${co}</select>`)}</div>
  <div>${lbl(t('lvFrom'),`<input id="l-from" type="date" value="${S.lvFrom}" class="${inp}">`)}</div>
  <div>${lbl(t('lvTo'),`<input id="l-to" type="date" value="${S.lvTo}" class="${inp}">`)}</div>
  <div class="col-span-2"><button data-act="saveLv" class="${btn}">${ico('check')}${t('save')}</button></div></div>
- <div class="${card} mt-2 overflow-x-auto">${ls.length?`<table class="w-full text-sm"><thead class="text-xs text-slate-500 text-left"><tr><th class="pb-2 font-medium">${t('date')}</th><th class="pb-2 font-medium">${t('employee')}</th><th class="pb-2 font-medium">${t('lvCat')}</th><th></th></tr></thead><tbody>${ls.map(x=>`<tr class="border-t border-slate-100"><td class="py-2 pr-2">${x.date}</td><td class="pr-2">${esc(nm(x.emp))}</td><td class="pr-2">${esc(cn(x.cat))}</td><td class="text-right"><button data-act="delLv" data-emp="${esc(x.emp)}" data-date="${x.date}" class="p-1.5 text-slate-500 hover:text-red-600">${ico('trash-2')}</button></td></tr>`).join('')}</tbody></table>`:`<p class="text-sm text-slate-400 text-center py-4">${t('noData')}</p>`}</div>`;
+ <section id="n-lvl" class="rounded-xl border border-slate-200 bg-white lg:col-span-3">${vLeaveList()}</section></div>`;
 }
  
 function vLeaveBal(){
@@ -484,7 +642,7 @@ function vBulk(){
  
 function render(){
  document.documentElement.lang=S.lang;document.title=t('app');
- $('app').className='mx-auto px-4 pb-16 print:max-w-none print:px-0 print:pb-0 '+(S.tab=='emp'?'max-w-6xl':'max-w-3xl');
+ $('app').className='mx-auto px-4 pb-16 print:max-w-none print:px-0 print:pb-0 '+(S.tab=='emp'||S.tab=='entry'?'max-w-6xl':'max-w-3xl');
  const body={emp:vEmp,entry:vEntry,bulk:vBulk,report:vReport,settings:vSet,policy:vPolicy,data:vData}[S.tab]();
  $('app').innerHTML=`<header class="pt-6 pb-4 flex items-center gap-2 text-teal-700 print:hidden">${ico('timer','!w-6 !h-6')}<h1 class="text-xl font-semibold text-slate-900">${t('app')}</h1></header>
  <nav class="flex gap-1 overflow-x-auto mb-4 border-b border-slate-200 print:hidden">${tabs.map(([k,i])=>`<button data-act="tab" data-t="${k}" class="flex items-center gap-1.5 px-3 py-2 text-sm whitespace-nowrap border-b-2 -mb-px ${S.tab==k?'border-teal-700 text-teal-700 font-medium':'border-transparent text-slate-500 hover:text-slate-800'}">${ico(i)}${t(k)}</button>`).join('')}</nav>${body}`;
@@ -589,7 +747,7 @@ const A={
   if(!emp||!date||late<0||early<0||abs<0)return alert(t('errReq'));
   if(late+early+abs>cfg(date.slice(0,7)).wh*60)return alert(t('errMin'));
   S.recs=S.recs.filter(x=>!(x.emp==emp&&x.date==date));S.recs.push({emp,date,late,early,abs});
-  S.selEmp=emp;S.selDate=date;S.month=date.slice(0,7);save();render();
+  S.selEmp=emp;S.selDate=date;S.month=date.slice(0,7);save();render();goRoster();
  },
  delRec(d){S.recs=S.recs.filter(x=>!(x.emp==d.emp&&x.date==d.date));save();render()},
  newEmp(){S.add=true;S.edit=null;render()},
@@ -600,6 +758,17 @@ const A={
  eClrD(){S.ed='';S.ep=50;empRefresh()},
  eClr(){S.eq='';S.eb='';S.ed='';S.ep=50;$('e-q').value='';empRefresh()},
  eMore(){S.ep+=50;empRefresh()},
+ nSt(d){S.ns=d.v;S.nlp=50;entRefresh()},
+ nPick(d){if(String(S.selEmp)!=String(d.id)){S.selEmp=d.id;resetForm()}entRefresh();goForm()},
+ nRng(d){S.nrg=d.v=='day'?'day':'month';S.nrp=50;entRefresh()},
+ nMore(){S.nlp+=50;entRefresh()},
+ nMoreR(){S.nrp+=50;entRefresh()},
+ nClrQ(){S.nq='';S.nlp=S.nrp=50;$('n-q').value='';entRefresh()},
+ nClrB(){S.nb='';S.nlp=S.nrp=50;entRefresh()},
+ nClrD(){S.nd='';S.nlp=S.nrp=50;entRefresh()},
+ nClr(){S.nq='';S.nb='';S.nd='';S.ns='all';S.nlp=S.nrp=50;$('n-q').value='';entRefresh()},
+ nEdit(d){S.selEmp=d.emp;S.selDate=d.date;S.month=d.date.slice(0,7);render();fillRec(d.emp,d.date);goForm()},
+ loadRec(){fillRec(S.selEmp,S.selDate)},
  doImpA(){
   const mode=$('b-mode').value;S.bm=mode;
   const rows=$('imp-a').value.replace(/\r/g,'').split('\n').filter(l=>l.trim());
@@ -687,11 +856,12 @@ document.addEventListener('change',e=>{
  else if(el.dataset.time!==undefined){if(tm(el.value)!==null){setP(ct(),el.dataset.time,el.value);save()}render()}
  else if(el.dataset.f!==undefined){S[el.dataset.f]=el.value;render()}
  else if(el.dataset.e!==undefined){S[el.dataset.e]=el.value;S.ep=50;empRefresh()}
+ else if(el.dataset.n!==undefined){S[el.dataset.n]=el.value;S.nlp=S.nrp=50;entRefresh()}
  else if(el.id=='b-mode')S.bm=el.value;
  else if(el.id=='r-in'||el.id=='r-out')autoTime();
- else if(el.hasAttribute('data-month')&&el.value){S.month=el.value;render()}
- else if(el.id=='r-emp')S.selEmp=el.value;
- else if(el.id=='r-date'&&el.value){S.selDate=el.value;autoTime()}
+ else if(el.hasAttribute('data-month')&&el.value){S.month=el.value;S.nrp=50;if(S.tab=='entry'&&S.selDate.slice(0,7)!=S.month)S.selDate=S.month==LD().slice(0,7)?LD():S.month+'-01';render()}
+ else if(el.id=='r-emp'){if(String(S.selEmp)!=String(el.value)){S.selEmp=el.value;resetForm()}entRefresh()}
+ else if(el.id=='r-date'&&el.value){S.selDate=el.value;S.month=el.value.slice(0,7);autoTime();entRefresh()}
  else if(el.id=='l-emp')S.lvEmp=el.value;
  else if(el.id=='l-cat')S.lvCat=el.value;
  else if(el.id=='l-from'&&el.value){S.lvFrom=el.value;if(S.lvTo<el.value){S.lvTo=el.value;$('l-to').value=el.value}}
@@ -702,9 +872,10 @@ document.addEventListener('change',e=>{
  }
  else if(el.dataset.rs!==undefined){const f=el.files&&el.files[0];el.value='';if(f)restoreFile(f,el.dataset.rs)}
 });
-document.addEventListener('input',e=>{if(e.target.id=='e-q'){S.eq=e.target.value;S.ep=50;empRefresh()}});
+document.addEventListener('input',e=>{if(e.target.id=='e-q'){S.eq=e.target.value;S.ep=50;empRefresh()}else if(e.target.id=='n-q'){S.nq=e.target.value;S.nlp=S.nrp=50;entRefresh()}});
 document.addEventListener('toggle',e=>{if(e.target.id=='emx')S.emx=e.target.open},true);
 document.addEventListener('keydown',e=>{
+ if(S.tab=='entry'&&e.key=='Enter'&&/^r-(in|out|late|early|abs)$/.test(e.target.id||'')){e.preventDefault();if(e.target.id=='r-in'||e.target.id=='r-out')autoTime();A.saveRec();return}
  if(!(S.tab=='emp'&&(S.edit||S.add)))return;
  if(e.key=='Escape')A.cancelEdit();
  else if(e.key=='Enter'&&e.target.tagName=='INPUT'&&e.target.closest('[data-modal]'))A.saveEmp();
